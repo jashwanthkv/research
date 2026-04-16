@@ -1,0 +1,46 @@
+/* ── Year filter row ── */
+.year-filter-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin: 0.5rem 0;
+}
+
+.year-filter-label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.year-filter-inputs {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.year-input {
+  width: 80px;
+  padding: 0.3rem 0.5rem;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--surface2);
+  color: var(--text);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.year-input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.year-input:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.year-separator {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}

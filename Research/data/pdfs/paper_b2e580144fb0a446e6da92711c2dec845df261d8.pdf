@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" > 
+<title>Nuclear receptor subfamily 4 group A member 1 promotes myocardial ischemia/reperfusion injury through inducing mitochondrial fission factor-mediated mitochondrial fragmentation and inhibiting FUN14 domain containing 1-depedent mitophagy</title>
+<meta name="keywords" content="NR4A1, Mff, FUNDC1, pan-apoptosis, myocardial ischemia-reperfusion injury">
+<meta name="citation_issn" content="1449-2288">
+<meta name="citation_journal_title" content="International Journal of Biological Sciences">
+<meta name="citation_publisher" content="Ivyspring International Publisher">
+<meta name="citation_title" content="Nuclear receptor subfamily 4 group A member 1 promotes myocardial ischemia/reperfusion injury through inducing mitochondrial fission factor-mediated mitochondrial fragmentation and inhibiting FUN14 domain containing 1-depedent mitophagy">
+<meta name="citation_publication_date" content="2024/8/19">
+<meta name="citation_volume" content="20">
+<meta name="citation_issue" content="11">
+<meta name="citation_firstpage" content="4458">
+<meta name="citation_lastpage" content="4475">
+<meta name="citation_doi" content="10.7150/ijbs.95853">
+<meta name="citation_pdf_url" content="https://www.ijbs.com/v20p4458.pdf">
+<meta name="citation_author" content="Wang, Junyan">
+<meta name="citation_author" content="Zhuang, Haowen">
+<meta name="citation_author" content="Jia, Lianqun">
+<meta name="citation_author" content="He, Xinyong">
+<meta name="citation_author" content="Zheng, Sicheng">
+<meta name="citation_author" content="Ji, Kangshou">
+<meta name="citation_author" content="Xie, Kang">
+<meta name="citation_author" content="Ying, Tong">
+<meta name="citation_author" content="Zhang, Ying">
+<meta name="citation_author" content="Li, Chun">
+<meta name="citation_author" content="Chang, Xing">
+<script src='/ms/java/sticker.js'></script>
+<link rel='canonical' href='https://www.ijbs.com/v20p4458.htm'>
+<link rel="stylesheet" type="text/css" media="all" href="/ms/css/ivy.css?v=85">
+<link rel="stylesheet" type="text/css" media="all and (min-width: 801px)" href="/ms/site/main.css?v=25">
+<link rel="stylesheet" type="text/css" media="all and (min-width: 801px)" href="/style.css?v=40">
+<link rel="stylesheet" type="text/css" media="all and (max-width: 800px)" href="/ms/css/ivymobile.css?v=34" >
+<link rel="stylesheet" type="text/css" media="all and (max-width: 800px)" href="/ms/site/sitemobile.css?v=2" >
+<script src="/ms/java/function.js?v=43"></script>
+</head>
+<body id="main_body">
+      <div id="page_all">
+        <div id="container">
+            <div id="header">
+                                
+            	 <div id="logo">                
+<span class='ivyjournal display_mobile'>International Journal of Biological Sciences</span>&nbsp;<span class='impactfactorNew'><span class='impactHead'>10</span><br><span class='impactLabel'>Impact Factor</span></span><span class='display_pc' > <br><br><br><br></span> <span class='textlinkgrey display_pc' >ISSN: 1449-2288</span>  
+</div>
+                
+                
+               
+            </div>
+            <div id="main_nav_container">
+ 
+<ul id=main_nav_list><li><a  href="/" >Home </a></li><li><a  href="/ms/author" >For Authors </a></li><li><a  href="/ms/submit" >Submit Manuscript </a></li><li><a  href="/ms/status" >Login </a></li><li><a  href="/ms/feedback" >Contact </a></li></ul>
+   <div class='topnav-right'>
+    <a href='/ms/userlogin' title='My account'><img src='/ms/images/account.svg' alt='Account' height='24' width='24'>
+</a>
+  </div>
+
+            </div>
+            <div id="main_container">
+            	<div id="sub_container1">
+                	<div id="sub_nav_container">
+<ul class='sub_nav_list'><li><a  href="/v22i6" >Issue 6; 2026 </a></li><li><a  href="/v22i5" >Issue 5; 2026 </a></li><li><a  href="/v22i4" >Issue 4; 2026 </a></li><li><a  href="/v22i3" >Issue 3; 2026 </a></li><li><a  href="/v22i2" >Issue 2; 2026 </a></li><li><a  href="/ms/archive/22" >Volume 22; 2026 </a></li><li><a  href="/ms/archive" >Past Issues </a></li><li><a  href="/ms/acceptms" >Advance Articles </a></li><li><a  href="/editorial" >Editorial Board </a></li><li><a  href="/ms/coverimage" >Cover Images </a></li><li><a  href="/coverage" >Index &amp; Coverage </a></li><li><a  href="/ms/coversuggest" >Cover Suggestion </a></li><li><a  href="/specialissue" >Special Issues </a></li></ul>                    
+
+  
+    
+<form method="post" action="/ms/mysearch"  class="searchblock" >
+
+<input type="text" name="query" size="9" maxlength="255" value="" id="sbi"  class="formfield" placeholder="Article title/doi">
+<button type="submit" name="search" value="Search" id="sbb"  title="Search article by title or doi"><img src='/ms/images/search.svg' alt='Search' height='24' width='24'  style='vertical-align: middle;'></button>
+<input type="hidden" name="content" value="IJBS1449-2288">
+
+</form>    <div class='sub_nav_space display_pc'></div><div   id='sticker'><a href='#headingAtop' >Top</a>
+<br><a href='#headingA1' >Introduction</a><br><a href='#headingA2' >Materials and Methods</a><br><a href='#headingA3' >Results</a><br><a href='#headingA4' >Discussion</a><br><a href='#SM0' >Supplementary Material</a><br><a href='#headingA5' >Acknowledgements</a><br><a href='#headingA7' >References</a></div>
+<div  class="imagecenter">
+ <p   class="divboxbg"><a href="https://www.thno.org"  class="textlink">Theranostics</a></p>                
+                
+ <p   class="divboxbg"><a href="https://www.medsci.org"  class="textlink">International Journal of Medical Sciences</a></p>
+<p   class="divboxbg"><a href="https://www.ntno.org"  class="textlink">Nanotheranostics</a></p>
+
+<p   class="divboxbg"><a href="https://www.jcancer.org"  class="textlink">Journal of Cancer</a></p>
+
+<p   class="divboxbg"><a href="https://www.jgenomics.com"  class="textlink">Journal of Genomics</a></p>
+
+<a href="https://www.ncbi.nlm.nih.gov/pmc/journals/294/" ><img src="/ms/images/pmclogo.gif" alt="PubMed Central" width="145" height="75"  class="imagecenter"  ></a>
+<p   class="divboxbg abstract"> <img src="/ms/images/openaccess.jpg" width="145" height="54" alt="open access"> Global reach, higher impact</p>
+
+                
+</div>  
+
+                 </div>
+                
+                </div>
+                <div id="sub_container2">
+<!-- ContentIvyspring -->
+<div class='divboxright'><a href='v20p4458.pdf' class='textbutton'>PDF</a><br> <br> 
+<a  title='Share on facebook' href='http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.ijbs.com%2Fv20p4458.htm' onClick="JavaScript:popup('http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.ijbs.com%2Fv20p4458.htm'); return false;"><img src='/ms/images/facebook.jpg' alt='Share on facebook' width='30'></a>
+
+<a title='Share on tweeters' href='https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.ijbs.com%2Fv20p4458.htm&amp;text=Nuclear+receptor+subfamily+4+group+A+member+1+promotes+myocardial+ischemia%2Freperfusion+injury+through+inducing+mitochondrial+fission+factor-mediated+mitochondrial+fragmentation+and+inhibiting+FUN14+domain+containing+1-depedent+mitophagy&amp;hashtags=International+Journal+of+Biological+Sciences' onClick="JavaScript:popup('https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.ijbs.com%2Fv20p4458.htm&amp;text=Nuclear+receptor+subfamily+4+group+A+member+1+promotes+myocardial+ischemia%2Freperfusion+injury+through+inducing+mitochondrial+fission+factor-mediated+mitochondrial+fragmentation+and+inhibiting+FUN14+domain+containing+1-depedent+mitophagy&amp;hashtags=International+Journal+of+Biological+Sciences'); return false;"><img src='/ms/images/x.jpg' alt='Share on tweeters' width='30'></a>
+
+<a  title='Share on linkedin' href='http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.ijbs.com%2Fv20p4458.htm&amp;title=Nuclear+receptor+subfamily+4+group+A+member+1+promotes+myocardial+ischemia%2Freperfusion+injury+through+inducing+mitochondrial+fission+factor-mediated+mitochondrial+fragmentation+and+inhibiting+FUN14+domain+containing+1-depedent+mitophagy' onClick="JavaScript:popup('http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.ijbs.com%2Fv20p4458.htm&amp;title=Nuclear+receptor+subfamily+4+group+A+member+1+promotes+myocardial+ischemia%2Freperfusion+injury+through+inducing+mitochondrial+fission+factor-mediated+mitochondrial+fragmentation+and+inhibiting+FUN14+domain+containing+1-depedent+mitophagy'); return false;"><img src='/ms/images/linkedin.jpg' alt='Share on linkedin' width='30'></a>
+<a  title='Share on googleplus' href='https://plus.google.com/share?url=https%3A%2F%2Fwww.ijbs.com%2Fv20p4458.htm' onClick="JavaScript:popup('https://plus.google.com/share?url=https%3A%2F%2Fwww.ijbs.com%2Fv20p4458.htm'); return false;"><img src='/ms/images/googleplus.jpg' alt='Share on googleplus' width='30'></a>
+
+</div>
+
+
+	<p class='text1' id='headingAtop'><i> Int J Biol Sci </i>  
+	2024; 20(11):4458-4475. 
+ doi:10.7150/ijbs.95853  <a  title='Issue 11 listing' class='textbutton' href='/v20i11'>This issue</a> <a href='#other_styles' class='textbutton'   title='Citation styles for this article'>Cite</a></p>
+
+<p class='abstract'>Research Paper</p>
+
+<h1 class='title'>Nuclear receptor subfamily 4 group A member 1 promotes myocardial ischemia/reperfusion injury through inducing mitochondrial fission factor-mediated mitochondrial fragmentation and inhibiting FUN14 domain containing 1-depedent mitophagy  </h1>
+     <p class='author'>Junyan Wang<sup>1,5#</sup>, Haowen Zhuang<sup>1,5#</sup>, Lianqun Jia<sup>2#</sup>, Xinyong He<sup>2</sup>, Sicheng Zheng<sup>2</sup>, Kangshou Ji<sup>2</sup>, Kang Xie<sup>1</sup>, Tong Ying<sup>2</sup>, Ying Zhang<sup>3,6 <a href='#coraddress'><img src='/ms/images/email.gif' width='16' height='16' alt="Corresponding address"></a></sup>, Chun Li<sup>1 <a href='#coraddress'><img src='/ms/images/email.gif' width='16' height='16' alt="Corresponding address"></a></sup>, Xing Chang<sup>4 <a href='#coraddress'><img src='/ms/images/email.gif' width='16' height='16' alt="Corresponding address"></a></sup></p> 
+        <p class='text2'> 1. School of Pharmaceutical Sciences, Guangzhou University of Chinese Medicine, Guangzhou, Guangdong, 510006, China.<br>2. Liaoning University of Traditional Chinese Medicine, Shenyang, Liaoning, 110032, China.<br>3. Senior Department of Cardiology, The Sixth Medical Center of People's Liberation Army General Hospital, Beijing 100048 Beijing, China.<br>4. Guang'anmen Hospital, China Academy of Chinese Medical Sciences, Beijing, 100053, China.<br>5. State Key Laboratory of Dampness Syndrome of Chinese Medicine, The Second Affiliated Hospital of Guangzhou University of Chinese Medicine, Guangzhou, Guangdong, 510006, China.<br>6. Xianning Medical College, Hubei University of Science &#38; Technology, Xianning 437000, China.<br>#Equal contribution.<br>
+ </p>
+<p class='footer'>&#x2709; Corresponding authors: xingchang_tcm<script>
+  <!--
+  var thismailbody2 = "";
+  var thismailbody4 = "";
+  var thismailbody1  = "";
+  var thismailbody3  = "";
+  var thismailbody11 = "";
+  var thismailbody12 = "outloo";
+thismailbody12 = thismailbody12+thismailbody11;
+thismailbody4 =    thismailbody4 + "&#6";
+thismailbody1 = thismailbody12+"k&"+"#x";
+thismailbody4 =    thismailbody4 + "4;";
+thismailbody3 =    thismailbody1;
+thismailbody3 = thismailbody3+"2e;";
+
+  document.write(thismailbody4 + thismailbody3+thismailbody2)
+  //-->
+</script>com (Xing Chang); lichun19850204<script>
+  <!--
+  var thismailbody2 = "";
+  var thismailbody4 = "";
+  var thismailbody1  = "";
+  var thismailbody3  = "";
+  var thismailbody11 = "";
+  var thismailbody12 = "16";
+thismailbody12 = thismailbody12+thismailbody11;
+thismailbody4 =    thismailbody4 + "&#6";
+thismailbody1 = thismailbody12+"3&"+"#x";
+thismailbody4 =    thismailbody4 + "4;";
+thismailbody3 =    thismailbody1;
+thismailbody3 = thismailbody3+"2e;";
+
+  document.write(thismailbody4 + thismailbody3+thismailbody2)
+  //-->
+</script>com (Chun Li); angelazhang301<script>
+  <!--
+  var thismailbody2 = "";
+  var thismailbody4 = "";
+  var thismailbody1  = "";
+  var thismailbody3  = "";
+  var thismailbody11 = "";
+  var thismailbody12 = "16";
+thismailbody12 = thismailbody12+thismailbody11;
+thismailbody4 =    thismailbody4 + "&#6";
+thismailbody1 = thismailbody12+"3&"+"#x";
+thismailbody4 =    thismailbody4 + "4;";
+thismailbody3 =    thismailbody1;
+thismailbody3 = thismailbody3+"2e;";
+
+  document.write(thismailbody4 + thismailbody3+thismailbody2)
+  //-->
+</script>com (Ying Zhang).</p><p ><span class="text2">Received 2024-3-1; Accepted 2024-8-9; Published 2024-8-19</span></p>
+<div class='divbox1'><b>Citation:</b><br> 
+<div id='ivyciteID'>Wang J, Zhuang H, Jia L, He X, Zheng S, Ji K, Xie K, Ying T, Zhang Y, Li C, Chang X. Nuclear receptor subfamily 4 group A member 1 promotes myocardial ischemia/reperfusion injury through inducing mitochondrial fission factor-mediated mitochondrial fragmentation and inhibiting FUN14 domain containing 1-depedent mitophagy. <i>Int J Biol Sci</i> 2024; 20(11):4458-4475. doi:10.7150/ijbs.95853. https://www.ijbs.com/v20p4458.htm 
+</div><button  class='textbutton' title='Copy to clipboard' onclick="any2clipboard('ivyciteID')">Copy</button> 
+<a href='#other_styles'  class='textbutton'  title='Other citation styles eg. ACS APA'>Other styles</a><br><br>
+<form  method='post' action='/ms/referencefile'>
+  <select name='filetype' >
+  <option value='volvo'>EndNote</option>
+  <option value='MEDLINE'>MEDLINE</option>
+  <option value='BibTex'>BibTex</option>
+  <option value='ReferenceManager'>ReferenceManager</option>
+  <option value='RIS'>RIS</option>
+  </select>
+  <button class='textbutton' type='submit' name='submit' value='download'  title='Download a file for citation software'>Download</button>  
+  
+  <span id='morestyle' style='display:none'><br>In EndNote Library, go to File – Import. Select the file that you have just downloaded and select  import option Reference Manager (RIS). Click on Import.</span>
+<span onclick="showMore('Close','File import instruction','morestyle','showmoreBtn')" id='showmoreBtn' class='textlinkgrey' >File import instruction</span>
+<input type='hidden' name='citedata' value="IJBS^~^International Journal of Biological Sciences^~^Int J Biol Sci^~^1449-2288^~^Research Paper^~^Wang, Junyan | Zhuang, Haowen | Jia, Lianqun | He, Xinyong | Zheng, Sicheng | Ji, Kangshou | Xie, Kang | Ying, Tong | Zhang, Ying | Li, Chun | Chang, Xing^~^Nuclear receptor subfamily 4 group A member 1 promotes myocardial ischemia/reperfusion injury through inducing mitochondrial fission factor-mediated mitochondrial fragmentation and inhibiting FUN14 domain containing 1-depedent mitophagy^~^2024^~^20^~^11^~^4458^~^4475^~^10.7150/ijbs.95853^~^https://www.ijbs.com/v20p4458.htm">
+</form>
+
+</div> 
+<h1 class="articlegroup" id="headingAa">Abstract</h1><img  class='clickfig' src='/v20/p4458/tocs.jpg'  alt='Graphic abstract'  title='&copy; The Author. International Journal of Biological Sciences'  onclick="openPopupFig('/v20/p4458/toc.jpg');"> 
+<p>This study investigated the mechanism by which NR4A1 regulates mitochondrial fission factor (Mff)-related mitochondrial fission and FUN14 domain 1 (FUNDC1)-mediated mitophagy following cardiac ischemia-reperfusion injury(I/R). Our findings showed that the damage regulation was positively correlated with the pathological fission and pan-apoptosis of myocardial cell mitochondria. Compared with wild-type mice (WT), NR4A1-knockout mice exhibited resistance to myocardial ischemia-reperfusion injury and mitochondrial pathological fission, characterized by mitophagy activation. Results showed that ischemia-reperfusion injury increased NR4A1 expression level, activating mitochondrial fission mediated by Mff and restoring the mitophagy phenotype mediated by FUNDC1. The inactivation of FUNDC1 phosphorylation could not mediate the normalization of mitophagy in a timely manner, leading to an excessive stress response of unfolded mitochondrial proteins and an imbalance in mitochondrial homeostasis. This process disrupted the normalization of the mitochondrial quality control network, leading to accumulation of damaged mitochondria and the activation of pan-apoptotic programs. Our data indicate that NR4A1 is a novel and critical target in myocardial I/R injury that exertsand negative regulatory effects by activating Mff-mediated mito-fission and inhibiting FUNDC1-mediated mitophagy. Targeting the crosstalk balance between NR4A1-Mff-FUNDC1 is a potential approach for treating I/R.</p><p><b>Keywords</b>: NR4A1, Mff, FUNDC1, pan-apoptosis, myocardial ischemia-reperfusion injury </p><p style='clear:both;'></p>
+
+
+<h1 class="articlegroup"  id="headingA1">Introduction</h1>
+
+ <p>Myocardial ischemia/reperfusion (I/R), a common form of ischemic heart disease, is difficult to overcome due to the lack of ideal targeted drugs [<a href="#B1">1</a>], necessitating the determination of the pathological underlying myocardial I/R injury to facilitate the development of new therapeutic drugs. Inflammatory damage, redox imbalance, metabolic reprogramming, energy metabolism dysfunction, and mitochondrial DNA damage are important pathological mechanisms underlying I/R injury, of which mitochondrial dysfunction is a key mechanism [<a href="#B2">2</a>]. Ischemic and hypoxic stress can activate endogenous mitochondrial quality control (MQC) mechanisms, primarily mitochondrial fission and mitophagy. Under physiological conditions, the pathological fission of mitochondria followed by mitophagy selectively clears damaged or non-functional mitochondria, which cooperates with the normalization of the unfolded mitochondrial protein response (UPRmt) to maintain mitochondrial protein homeostasis [<a href="#B3">3</a>; <a href="#B4">4</a>]. Finally, new organelles are produced via mitochondrial biosynthesis.</p><p>Mitochondrial dynamics include fission and fusion [<a href="#B5">5</a>]. Excessive mito-fission plays a dominant role in myocardial injury. In hearts with I/R, the level of Drp1 increases, whereas that of Mfn2 and Opa1 is downregulated, thereby causing the release of cyto-c and inducing apoptosis [<a href="#B6">6</a>; <a href="#B7">7</a>]. Conversely, stimulating mitophagy and normalizing the FUNDC1 pathway can protect against injury by blocking the mitochondrial pathway-induced apoptosis. Moreover, in mice with I/R injury, mitochondrial fission factor (Mff) is significantly increased, whereas mice with Mff gene knockout show a significant reduction in the infarction area and recovery of cardiac ejection function [<a href="#B8">8</a>]. Furthermore, defects in Mff can block the oligomerization of VDAC1 and excessive opening of mitochondrial permeability transition pores, alleviate damage to respiratory chain complex, and inhibit the activation of oxidative stress and apoptosis pathways [<a href="#B9">9</a>]. Coincidentally, I/R-induced myocardial ischemic injury promotes the excessive activation of JNK, thereby mediating the activation of the Mff pathway. Mff overexpression promotes pathological mitochondrial fission and activates the mitochondrial apoptotic pathway. However, transgenic DUSP1 can block the excessive activation of Mff, reduce severe mitochondrial fission, and provide a survival advantage in myocardial ischemic injury after I/R stress [<a href="#B10">10</a>]. Based on the above findings, we hypothesize that mitophagy and mitochondrial fission are important involved in maintaining mitochondrial homeostasis and are potential therapeutic targets against myocardial I/R injury. However, the upstream regulatory proteins require further investigation.</p><p>The nuclear receptor family comprises over 150 members that establish connections between stress stimuli and gene expression and participate in regulating the physiological and pathological functions of multiple organs. Nuclear receptors have multiple biological regulatory effects on cell proliferation, differentiation, apoptosis, metabolism, and evolution. The orphan nuclear receptor neurotrophic factor-induced gene B family includes three members, NR4A1, NR4A2, and NR4A3, that play synergistic regulatory roles in energy metabolism [<a href="#B11">11</a>; <a href="#B12">12</a>; <a href="#B13">13</a>]. NR4A1, which belongs to the nuclear hormone receptor superfamily, can quickly sense and respond to changes in the extra-environment [<a href="#B14">14</a>; <a href="#B15">15</a>]. Various physiological signals and physical stimuli can induce expression of this receptor. NR4A1 is expressed in the muscles, liver, prostate, and nervous system of various rodents, where it plays a dual role in mediating cell proliferation, differentiation, and apoptosis [<a href="#B16">16</a>]. NR4A1 has been shown to exacerbate myocardial I/R injury and promote changes in mitochondrial morphology and structure. Inhibition of NR4A1 can suppress oxidative stress damage and mitochondrial homeostasis disorders, thereby reducing myocardial I/R injury. Moreover, the specific gene knockout of NR4A1 can mediate the upregulation of OPA1 expression, increase mitochondrial fusion, and block the inflammatory response and apoptosis of the mitochondrial pathway [<a href="#B17">17</a>]. NR4A1 promotes the activation of Drp1 and inhibits the transcription of the mitophagy regulatory protein Bnip3, leading to mitochondrial fission overactivation mediated by Drp1 and mitophagy dysfunction mediated by BNIP3 [<a href="#B18">18</a>]. NR4A1 also exacerbates liver cell apoptosis, leading to liver dysfunction and chronic metabolic damage, by regulating abnormal mitochondrial fission. Notably, the pathological regulatory mechanism of NR4A1 in cardiogenic ischemic injury has been confirmed [<a href="#B19">19</a>; <a href="#B20">20</a>].</p><p>Using <i>in vitro</i>/<i>in vivo</i> model, this study elucidated the pathological regulatory mechanism of NR4A1 in I/R injury and identified NR4A1 as a potential key protein in I/R. We also confirmed that the pathological upregulation of NR4A1 in I/R injury mediates Mff-associated mitochondrial fission and FUNDC1-related mitophagy dysfunction. This process results in dysregulation of mitochondrial protein homeostasis and biosynthetic dysfunction, ultimately promoting the activation of the pan-apoptotic pathway in cardiomyocytes.</p>
+
+<h1 class="articlegroup"  id="headingA2">Materials and Methods</h1>
+
+
+<h2>Animals</h2><p>Based on previous studies [<a href="#B19">19</a>; <a href="#B21">21</a>], we utilized NR4A1<sup>CKO</sup>, NR4A1<sup>TG</sup>, FUND C1<sup>CKO</sup>, and FUNDC1<sup>TG</sup> mice (CKO: Cardiac specific knockout; TG: Transgenosis). The experimental protocol was approved by the Ethics Committee of Guangzhou University of TCM in compliance with the ARRIVE Animal Research Guidelines (Reference Number: 20211207002). Adult male C57BL/6 mice, aged 7-8 weeks, were housed at the Animal Experiment Center of Guangzhou University of TCM. The laboratory conditions were maintained at a temperature of 23-25 &#176;C, with a 12-h light/dark cycle, a humidity level of 55% &#177; 5%, and provided with approved standard feed and drinking water.</p>
+<h2>Myocardial ischemia-reperfusion models</h2><p>To establish a mouse I/R injury model, C57BL/6 mice were anesthetized with an intraperitoneal injection of pentobarbital at a dose of 50 mg/kg. We confirmed the depth of anesthesia by ensuring no physiological response to hindlimb clamping using hemostatic forceps, following which a hair removal cream was applied to depilate and prepare the chest skin locally. The mice were placed on a small constant temperature operating table set at 35-37 &#186;C, and a cardiac monitor was installed.</p><p>After local disinfection, the intercostal skin was cut, muscles were separated, and pericardium was opened. The heart was gently exteriorized to expose the left anterior descending coronary artery, which was swiftly ligated using a 6-0 sterile silk thread with a sliding knot. Ischemia was confirmed by whitening of the pathological area at the base of the heart. The chest was promptly closed and compressed to prevent pneumothorax, and the muscles and skin were sutured in layers.</p><p>This procedure induces myocardial ischemia in the anterior wall of the LV. After 45 min of ischemia, a second thoracotomy was performed to loosen the ligature, thereby restoring the blood flow to the left outer branch of the coronary artery and myocardial tissue. The chest was closed and compressed to prevent a pneumothorax.</p><p>The sham surgery group underwent the same procedures of anesthesia, thoracotomy, and thread insertion without inducing myocardial ischemia or chest closure. Postoperatively, mice received intramuscular injections of penicillin (18,000 U/kg) for three days to prevent infection [<a href="#B7">7</a>; <a href="#B9">9</a>; <a href="#B22">22</a>]</p>
+<h2>Cardiomyocyte culture</h2><p>This study used an <i>in vitro</i> H/R model of myocardial cells. Based on our previous methods [<a href="#B7">7</a>; <a href="#B9">9</a>; <a href="#B22">22</a>], cardiomyocytes were isolated from wild-type (WT) and NR4A1<sup>CKO</sup>/NR4A1<sup>TG</sup> mice and subsequently used to induce an <i>in vitro</i> model of H/R injury. Cells were cultured for 6 h under standard conditions to induce reoxygenation damage. HL-1 cells were transfected with adenovirus I/R for 48 h, with interventions of either 100 mM ethanol or PBS.</p>
+<h2>Histology, immunohistochemistry, and immunofluorescence</h2><p>Extracted mouse hearts were fixed in 10% formalin, dehydrated, and embedded in paraffin. Subsequently, 5 &#181;m thick heart sections were stained with H&#38;E to evaluate the morphological characteristics post-ischemia-reperfusion. Masson staining was used to observe myocardial fibrosis and the extent of injury. Pathological changes in tissues were observed and photographed using an optical microscope. Semi-quantitative analysis of H&#38;E- and Masson-stained myocardial injury areas was performed using the Image Pro software, and the results were expressed as a percentage of the total examined myocardial area.</p><p>For immunofluorescence, cell preparations were fixed with 4% paraformaldehyde at 4 &#176;C for 15 min, followed by overnight incubation with the primary antibody at 4 &#176;C. The samples were washed thrice with TBS (5 min per wash) and incubated with a secondary antibody (IgG-Alexa Fluor 555, 1:500; #4409; Cell Signaling Technology, Danvers, MA, USA). Samples were scanned and photographed using an immunofluorescence microscope [<a href="#B7">7</a>].</p>
+<h2>Cardiomyocyte viability and degree of mitochondrial permeability pore transition and opening</h2><p>The survival rate of cultured neonatal cardiomyocytes was assessed using CCK-8. The mPTP opening rate was evaluated using as previously described. Briefly, control and ethanol-treated cardiomyocytes were washed with PBS and incubated with 10 nM TMRE for 30 min. TMRE fluorescence intensity was recorded every 15 s using a Nikon confocal microscope. A curve describing the variation in fluorescence intensity over time was obtained and the TMRE fluorescence quenching time was normalized to that of the control group to evaluate the mPTP openness rate.</p>
+<h2>ELISA</h2><p>The levels of interleukin (IL)-10, IL-17, TNF-&#945;, MMP9, Complex-I, Complex-III, and Complex-V were measured using ELISA kits (MyBioSource, CA, USA) according to the instructions.</p>
+<h2>RT-PCR</h2><p>Total RNA was isolated from the heart tissues of different experimental groups using TRIzol reagent (Invitrogen). The homogenate was vigorously shaken and incubated on ice for 15 min with aliquots of 0.2 ml chloroform per 1 ml of homogenate. Transfer the mixed sample to a new test tube and add the same volume of isopropanol. The sample was incubated at 4 &#176;C for 10 min and centrifuged at 12,000 rpm for 10 min at 4 &#176;C. The supernatant was removed, and the pellet was washed with 75% ethanol and centrifuged at 8,000 rpm for 8 min at 4 &#176;C. RNA (2 &#181;g) was reverse transcribed using M-MLV reverse transcriptase (Invitrogen), and the resulting cDNA was stored at -80 &#176;C until use. qRT-PCR was performed using SYBR Select Master Mix (Roche, Basel, Switzerland) and the ViiA 7 real-time PCR system (Applied Biosystems, Waltham, Massachusetts, USA).</p>
+<h2>Western blotting and co-immunoprecipitation</h2><p>Briefly, mouse heart tissue and cell samples were lysed using RIPA buffer containing a mixture of protease inhibitors. Equal amounts of proteins were transferred to an SDS-PAGE gel, separated by electrophoresis, and transferred onto a PVDF membrane (IPVH00010, Merck Millipore, Burlington, MA, USA). The protein samples were added dropwise into the wells and supplemented with 20 &#181;l of standard diluent. Subsequently, 200 &#181;l of BCA working solution was added to each sample and incubated at 37 &#176;C for 30 min. The protein sample buffer (loading buffer) was heated in a metal bath at 95 &#176;C for 5 min to achieve protein denaturation and ensure complete protein imprinting.</p><p>Prior to the experiment, the PVDF membrane was transferred to a 0.45 &#181;m current with a constant current aperture of 300 mA for 180 min, immersed in 5% BSA-TBST solution, and incubated for 1 h at room temperature. For primary antibody incubation, the membrane was incubated overnight at 4 &#176;C with the appropriate dilutions. The membrane was washed thrice with TBST, 10 min each wash.</p><p>For secondary antibody incubation, the membrane was treated with 5% BSA-TBST-diluted secondary antibodies (goat anti-rabbit IgG (H+L) HRP 1:10,000 and goat anti-rabbit IgG (H+L) HRP 1:10,000) and incubated for 60 min at room temperature. The membrane was then washed thrice with TBST for 10 min each wash. ECL was applied to the membrane surface for 3 min. The membrane was subsequently exposed for 10 s to 5 min, based on the light intensity, developed for 2 min, and fixed.</p><p>After scanning the images, semi-quantitative data analysis was performed using the ImageJ software and a gel imaging system. The primary antibodies used in this study were: anti-FUNDC1 (ab224722), anti-Beclin-1 (ab62557), anti-ATG5 (ab109490), anti-DRP1 (ab184247), PGC1&#945; (ab77210), anti-Fis-1 (ab156865), anti-Mff (ab129075), anti-Opa1 (ab157457), anti-Mfn1 (ab126575), anti-Mfn2 (ab124773), anti-SLC7A11 (ab307601), anti-GPX-4 (ab125066), anti-Caspase-1 (ab138483), anti-Caspase-8 (ab25901), anti-IL-18 (ab207323), anti-NLRP3 (ab263899), anti-AIM2 (ab119791), anti-Pyrin (ab195975), anti-ZBP-1 (ab290736), anti-GSDMD (ab209845), anti-MLKL (ab196436), anti-RIPK3 (ab195117), anti-NR4A1 (ab153914), anti-Nrf-1 (ab175932), anti-PGC1-&#945; (ab191838), anti-Tfam (ab252432), anti-TNF-&#945; (ab205587), and anti-MMP-9 (ab58803).</p>
+<h2>NR4A1-related protein molecular docking</h2><p>Docking simulations were performed using AutoDock Vina v.1.1.2 to investigate the binding modes of NR4A1 and Mff/FUNDC1. Three-dimensional (3D) structures of NR4A1 and Mff/FUNDC1 were obtained from the RCSB Protein Data Bank (www.rcsb.org). Docking input files were generated using AutoDockTools 1.5.6 software package. The default parameters were applied to Vina docking. The best-scoring trends from the Vina docking results were selected for further analysis. Visual analysis of the docking results was conducted using the PyMOL 1.7.6 software (www.pymol.org).</p>
+<h2>Statistical analyses</h2><p>The results are presented as mean &#177; standard error of the mean (SEM). Comparisons between two groups were performed using either the parametric <i>t</i>-test or the non-parametric Mann-Whitney test, while comparison between more than two groups was conducted using a one-way analysis of variance (ANOVA) followed by the Bonferroni post-hoc test. Data were analyzed using GraphPad Prism 9.0. Statistical significance was set at <i>p</i> &#60; 0.05</p>
+
+<h1 class="articlegroup"  id="headingA3">Results</h1>
+
+
+<h2>NR4A1 mediates cardiac I/R injury and leads to mitochondrial dysfunction</h2><p>To verify the regulatory role of NR4A1 in I/R-induced myocardial injury, we established a wild-type (WT) mouse model of I/R and performed western blot analysis.</p><p>NR4A1 expression increased over time following I/R injury (Figure <a href="#F1">1</a>I). To evaluate the causal relationship between NR4A1 and myocardial I/R injury, we conducted pathological injury control experiments in myocardium-specific NR4A1 knockout (NR4A1<sup>CKO</sup>) and NR4A1 transgenic (NR4A1<sup>TG</sup>) mice and found that I/R led to increased myocardial injury markers, structural damage to myocardial fibers, disordered arrangement, swelling, rupture, and abnormal cardiac function (Figure <a href="#F1">1</a>A-H, J). This resulted in severe myocardial injury and impaired cardiac ejection function in the control mice, along with exacerbated inflammatory injury and morphological damage to myocardial mitochondria (Figure <a href="#F1">1</a>K-M, P). The injury process also decreased mitophagy (Figure <a href="#F1">1</a>B, N-O). However, these indicators were significantly reduced in NR4A1<sup>CKO</sup> mice, whereas NR4A1<sup>TG</sup> did not ameliorate these pathological changes (Figure <a href="#F1">1</a>A-P). These results indicate that NR4A1 is a crucial regulatory protein mediating myocardial I/R injury and that NR4A1<sup>CKO</sup> protects the mouse myocardium from structural and functional abnormalities induced by I/R (Figure <a href="#F1">1</a>K-M,P). Furthermore, mitochondrial function assays revealed that, compared with the control group mice, mitophagy-mediated proteins exhibited low expression following I/R (Figure <a href="#F1">1</a>R-X). The level of mitophagy mediated by FUNDC1 significantly decreased following I/R and was accompanied by dysregulated mitochondrial dynamics (Figure <a href="#F1">1</a>R-X). This suggests that NR4A1 exacerbates I/R damage by mediating excessive mitochondrial fission and mitophagy dysfunction. Based on these findings, we conducted gene sequencing experiments using NR4A1 genetically modified mice.</p>
+<h2>Correlation between NR4A1 mediated cardiac I/R injury and mitochondrial fission and mitophagy</h2><p>We preliminarily confirmed that NR4A1-mediated mitochondrial fission and mitophagy dysregulation may be key mechanisms leading to I/R injury. To confirm the correlation between these mechanisms, we constructed an NR4A1 gene-modified mouse I/R model and performed second-generation transcriptome sequencing validation. The results confirmed that the NR4A1-mediated I/R injury mechanism is primarily associated with mito-fission/fusion, mitophagy, UPR<sup>mt</sup>, biosynthesis, oxidative phosphorylation, and apoptosis (Figure <a href="#F2">2</a>A-K). Furthermore, NR4A1 mediated the differential expression of genes related to endoplasmic reticulum stress injury and regulation of mitochondrial protein homeostasis (Figure <a href="#F3">3</a>A-E). These findings suggesting that mitochondrial dysfunction is the core pathological mechanism underlying I/R injury.</p> 
+<div class="ivytablediv" id="F1"><b>&nbsp;Figure 1</b>&nbsp;
+<p><b> NR4A1 mediates cardiac I/R injury and leads to myocardial mitochondrial dysfunction.</b> (A, J) Detection of myocardial ischemic injury area by cardiac pathological staining (HE/Masson); (B, N, O) Immunofluorescence staining and LC3/TOM20 expression level of myocardial tissue); (C-E) Detection of cardiac ejection function (LVEF; LVDd; LVSd; E/A); (G) LDH expression level; (H) Tnt expression level; (I) Western blot analysis of myocardial NR4A1 protein expression in WT mice; (K) The expression levels of anti-inflammatory factor IL-10; (L, M) and inflammatory factor IL-17/TNF-&#945;; (P) Detection of mitochondrial morphology and structural damage in myocardial tissue using transmission electron microscopy; (Q-X) Expression levels of mitochondrial mitophagy related proteins (FUNDC-1/Baclin-1), mitochondrial fusion related proteins (Mfn1/Opa1), and mitochondrial fission related proteins (Drp-1/Fis1/Mff); Experiments were repeated at least three times and the data are shown as mean &#177; SEM. *P&#60;0.05.</p> <img  class='dispnewfig' src='/ms/getimage.php?name=ijbsv20p4458g001.jpg'  alt='Int J Biol Sci Image'  onclick="openPopupFig('/ms/getimage.php?name=ijbsv20p4458g001.jpg');"> 
+</div> 
+<div class="ivytablediv" id="F2"><b>&nbsp;Figure 2</b>&nbsp;
+<p><b> The correlation between NR4A1 mediated cardiac I/R injury and Mitochondrial.</b> (A-B). Heatmap and genome-Circos plots of gene expression in the control group, I/R model group, and I/R model group (NR4A1<sup>CKO</sup>); (C-D) Volcano plot and MA plot of differential genes between the control group and the I/R model group; Volcano plot and MA plot of differentially expressed genes between the control group and the NR4A1 knockout I/R model group; (E-F) (G-K) GSEA analysis showed that compared to the control group, the myocardial cells of the I/R model group mice exhibited significant activation of mitochondrial fission, mito UPR, and apoptosis, while mitochondrial biogenesis and OXPHOS were significantly inhibited. Experiments were repeated at least three times and the data are shown as mean &#177; SEM. *p&#60;0.05.</p><img  class='dispnewfig' src='/ms/getimage.php?name=ijbsv20p4458g002.jpg'  alt='Int J Biol Sci Image'  onclick="openPopupFig('/ms/getimage.php?name=ijbsv20p4458g002.jpg');"> 
+</div> <p>To confirm the association between NR4A1-mediated I/R injury and mitochondrial function, we determined whether NR4A1 deficiency could reverse the mitochondrial homeostatic phenotype of myocardial cells following H/R. We evaluated the relevant mechanisms via <i>in vitro</i> genetic modifications. First, the expression of mitophagy-related markers and cellular activity were assessed using CCK8 and fluorescence co-localization experiments. The results showed decrease in myocardial cell activity following simulated I/R injury, accompanied by a decrease in the expression of mitophagy markers (Figure <a href="#F4">4</a>A-D). Additionally, there was an increase in the transcription levels of genes related to the mitochondrial unfolded protein response (UPR<sup>mt</sup>) and mitochondrial fragmentation (Figure <a href="#F4">4</a>I-P). I/R injury further increased mitochondrial fragmentation and mitophagy dysfunction, ultimately leading to the activation of programmed cell death pathways and decreased myocardial cell activity (Figure <a href="#F4">4</a>E-H,Q). Treatment with NR4A1 did not affect these pathological manifestations (Figure <a href="#F4">4</a>A-Q). However, NR4A1 knockout reversed these phenomena, increased mitophagy levels, and inhibited excessive fission and activation of UPR<sup>mt</sup> (Figure <a href="#F4">4</a>A-Q). This suggests NR4A1 as a key protein causing mitochondrial homeostasis imbalance in myocardial cells after ischemia-reperfusion injury, and that its downstream regulatory genes and mechanisms require further explanation.</p> 
+<div class="ivytablediv" id="F3"><b>&nbsp;Figure 3</b>&nbsp;
+<p><b> The correlation between NR4A1 mediated cardiac I/R injury and mitochondrial quality control.</b> (A) Volcano plot and MA plot of differential genes between I/R model groups; (B-C) GSEA analysis showed that compared to the I/R model group mice, cardiomyocyte specific knockout of NR4A1 can effectively alleviate oxidative stress, ER stress, apoptosis, the unfolded mitochondrial protein response contributes to the restoration of key mitochondrial quality control pathways such as OXPHOS and mitochondrial fusion, the enrichment analysis of Biological Process, Cellular Component, and Molecular Function in (D-E) GO analysis showed that the differentially expressed genes in the NR4A1 knockout group of cardiomyocytes were mainly enriched in mitochondria, endoplasmic reticulum, UPRmt, and other aspects. The KEGG pathway also demonstrates that NR4A1 knockout mainly affects core pathways such as myocardial cell metabolism and endoplasmic reticulum protein processing. Experiments were repeated at least three times and the data are shown as mean &#177; SEM. *P&#60;0.05.</p> <img  class='dispnewfig' src='/ms/getimage.php?name=ijbsv20p4458g003.jpg'  alt='Int J Biol Sci Image'  onclick="openPopupFig('/ms/getimage.php?name=ijbsv20p4458g003.jpg');"> 
+</div> 
+<div class="ivytablediv" id="F4"><b>&nbsp;Figure 4</b>&nbsp;
+<p><b> NR4A1-FUNDC1 mediated mitochondrial fission regulates mitochondrial biosynthesis in cardiomyocytes after I/R injury.</b> CCK8 detection of myocardial cell activity; (B-D) Fluorescence co localization detection of co localization expression of LC3 and Mito Tracker; (E) Inflammatory cytokine MMP-9 activity; (F-H) Caspase pathway cell apoptosis expression level; (I-M, O-P) UPR<sup>mt</sup> related gene expression levels (Atf5/HSP10/HSP60/Lonp1/CHOP/mtDNAj/CpPP); (N) Laser confocal detection of mitochondrial morphology and structure (Mito tracker); (Q) The expression levels of mitochondrial mitophagy related proteins (FUNDC-1/Baclin-1), mitochondrial fusion related proteins (Mfn1/Opa1), and mitochondrial fission related proteins (Drp-1/Fis1/Mff) were experimentally repeated at least three times and the data were shown as mean &#177; SEM. * p&#60;0.05.</p><img  class='dispnewfig' src='/ms/getimage.php?name=ijbsv20p4458g004.jpg'  alt='Int J Biol Sci Image'  onclick="openPopupFig('/ms/getimage.php?name=ijbsv20p4458g004.jpg');"> 
+</div> 
+<h2>NR4A1 inhibits FUNDC1-mediated mitophagy activation and widespread apoptosis of cardiomyocytes following I/R injury</h2><p>NR4A1-mediated mitochondrial homeostasis disorders are closely associated with the pathogenesis of cardiac injury [<a href="#B14">14</a>]. Transcriptomic studies and <i>in vitro</i> experiments using NR4A1 gene-modified animal models further confirmed the critical role of mitophagy dysfunction in the programmed cell death of cardiomyocytes. Receptor-dependent mitophagy involves the localization of FUNDC1 mitophagy receptors on the OMM, which directly interact with LC3 to mediate the clearance of damaged or excess mitochondria [<a href="#B23">23</a>; <a href="#B24">24</a>]. Following mitochondrial damage, PHB2 and cardiolipin externalize OMM and interact with LC3. Different receptors ensure tissue and stimulus specificity [<a href="#B25">25</a>]. Phosphorylation of FUNDC1 sites enhances their association with LC3, promoting normal activation of mitophagy [<a href="#B26">26</a>; <a href="#B27">27</a>]. We investigated the mechanism by which NR4A1 blocks pan-apoptosis by regulating mitophagy via FUNDC1 expression and found that I/R injury led to abnormal activation of the UPR<sup>mt</sup> and respiratory chain dysfunction in myocardial cells, further mediating the abnormal activation of pan-apoptosis-related proteins (necroptosis, ferroptosis, and pyroptosis) and resulting in decreased myocardial cell activity, and the molecular docking experiment results between Mff and NR4A1 further suggest the interaction between the Mff-NR4A1 (Figure <a href="#F5">5</a>A-N). Interestingly, NR4A1 knockout and transgenic treatment with FUNDC1 inhibited excessive stress of the UPR<sup>mt</sup>, restored the respiratory chain complex function, and inhibited the overexpression of pan-apoptosis-related proteins (Figure <a href="#F5">5</a>A-N).</p> 
+<div class="ivytablediv" id="F5"><b>&nbsp;Figure 5</b>&nbsp;
+<p><b> NR4A1 regulates the activation of pan apoptotic mitochondrial pathway in cardiomyocytes through FUNDC1-Mff.</b> (A) CCK8 detection of myocardial cell activity; (B-D) Expression level of mitochondrial respiratory chain complex (Complex-I/III/V); (E-J) Transcription levels of UPR<sup>mt</sup> related genes (Atf5/HSP10/HSP60/Lonp1/CHOP/mtDNAj/CpPP); (K-M) Expression levels of pan apoptotic related proteins (cell pyroptosis, ferroptosis); (N) Molecular docking between Mff and NR4A1; Experiments were repeated at least three times and the data are shown as mean &#177; SEM. *p&#60;0.05.</p> <img  class='dispnewfig' src='/ms/getimage.php?name=ijbsv20p4458g005.jpg'  alt='Int J Biol Sci Image'  onclick="openPopupFig('/ms/getimage.php?name=ijbsv20p4458g005.jpg');"> 
+</div> <p>Furthermore, the mitochondrial fission inhibitor Medivi-1 exerted the same regulatory effect, with both interventions reversing the overexpression of pan-apoptotic proteins in the mitochondrial pathway, restoring normal mitochondrial function, and maintaining mitochondrial protein homeostasis (Figure <a href="#F5">5</a>A-N). This suggests that the pathological mechanism of excessive mitochondrial fission may induce mitophagy dysfunction. To explore the mechanism of mitochondrial fission-mediated apoptosis in cardiomyocytes, we established Mff gene-modification treatments for cardiomyocytes (heart-specific knockout/overexpression) and extracted cardiomyocytes to simulate I/R injury (Figure <a href="#F5">5</a>A-N). The results showed that Mff knockout reversed mitochondrial homeostasis imbalance, restored normal mitophagy, inhibited the UPR<sup>mt</sup>, and blocked mitochondrial apoptosis (Figure <a href="#F5">5</a>A-N).</p><p>FUNDC1<sup>CKO</sup> and NR4A1/Mff<sup>TG</sup> gene modification treatments did not alter mitochondrial respiratory chain dysfunction or the excessive stress response to unfolded mitochondrial proteins following I/R injury, nor did they block activation of the pan-apoptotic pathway in cardiomyocytes (Figure <a href="#F5">5</a>A-N). These results confirm that NR4A1 regulations of FUNDC1-mediated mitophagy and Mff-related excessive mitochondrial fission are key induction mechanisms leading to mitochondrial dysfunction and pan-apoptosis of mitochondrial pathways, offering targets for protecting myocardial cell mitochondria. Further experiments are required to confirm the regulatory mechanisms of mitochondrial fission.</p>
+<h2>NR4A1-FUNDC1 mediated mitochondrial fission regulates mitochondrial biosynthesis following I/R injury</h2><p>Mitochondrial biosynthesis, the process of regenerating mitochondrial DNA to replace non-functional or damaged mitochondria [<a href="#B28">28</a>; <a href="#B29">29</a>], is primarily regulated by several co-biosynthetic transcription factors, including PGC1&#945; and Nrf-1/-2/Tfam [<a href="#B30">30</a>]. Herein, following I/R injury, we observed a decrease in PGC1&#945; and Nrf-1/-2/Tfam transcription levels, along with the activation of necrotic apoptosis (Figure <a href="#F6">6</a>E-G). The dysfunction of mitochondrial biosynthesis mediated by I/R injury further activated the pan-apoptotic mitochondrial pathway. Additionally, there was an increase in mitochondrial fission/fragmentation levels and an abnormal opening of mPTP in cardiomyocytes (Figure <a href="#F6">6</a>A-D,H), suggesting that I/R-mediated mitochondrial biosynthesis dysfunction is caused by excessive mitochondrial fission and membrane permeability transition pore dysfunction (Figure <a href="#F6">6</a>A-D,H). Intervention with mitochondrial fission inhibitors and NR4A1/Mff gene knockout inhibited excessive mitochondrial fission and fragmentation, blocked the necrotic apoptosis pathway, improved mitochondrial biosynthesis (Figure <a href="#F6">6</a>A-H) and inhibited the overexpression of pan-apoptosis-related proteins (Figure <a href="#F6">6</a>A-H). Interestingly, FUNDC1 overexpression exerted the same mitochondrial regulatory effect, inhibiting excessive mitochondrial fission and fragmentation and enhancing mitochondrial biosynthesis (Figure <a href="#F6">6</a>A-H). However, the FUNDC1<sup>CKO</sup>/NR4A1 <sup>TG</sup>/Mff <sup>TG</sup> gene modification treatments did not alter these effects (Figure <a href="#F6">6</a>A-H). Furthermore, mitophagy dysfunction mediated by FUNDC1 under NR4A1 regulation was confirmed to induce mitochondrial fragmentation and MFF-related pathological fission. These results suggests that NR4A1-regulated mitophagy/fission is the core mechanism that mediates myocardial I/R injury.</p>
+<h2>NR4A1 disrupts the cytoskeleton homeostasis of myocardial cells following I/R injury by inhibiting FUNDC1-mediated mitophagy</h2><p>Under physiological conditions, normal mitophagy is crucial for maintaining intracellular homeostasis and cytoskeletal protein stability in cardiomyocytes [<a href="#B31">31</a>; <a href="#B32">32</a>]. This process affects endoplasmic reticulum function and mitochondrial respiratory chain functions, thereby mediating the activation of the cell death program [<a href="#B33">33</a>; <a href="#B34">34</a>]. Given that NR4A1 mediates FUNDC1-related mitophagy dysfunction and negatively regulates cardiac mitochondrial homeostasis in mice, we determined whether NR4A1 could directly regulate FUNDC1-mediated mitophagy and affect cellular homeostasis. Confocal and western blot analyses of myocardial cells showed significant damage to cytoskeletal proteins following I/R injury, accompanied by mitochondrial biosynthesis and mitophagy (Figure <a href="#F7">7</a>A-F). However, after modifying the si-FUNDC1 gene in primary cardiomyocytes isolated from NR4A1 knockout mice, the cytoskeletal proteins remained damaged, and the reduced level of mitochondrial biosynthesis was not reversed (Figure <a href="#F7">7</a>A-F). This was accompanied by mitophagy dysfunction, mitochondrial respiratory chain dysfunction, and severe endoplasmic reticulum stress (Figure <a href="#F7">7</a>E-N). Interestingly, modification of the ad-FUNDC1 gene in primary cardiomyocytes isolated from NR4A1 knockout mice did not affect the mitochondrial protective mechanism conferred by NR4A1 knockout. This suggests that NR4A1 exerts a protective effect on cardiac cytoskeletal proteins and mitochondrial DNA by inhibiting FUNDC1-mediated mitophagy (Figure <a href="#F7">7</a>A-N).</p> 
+<div class="ivytablediv" id="F6"><b>&nbsp;Figure 6</b>&nbsp;
+<p><b> NR4A1 regulates mitochondrial apoptosis and biosynthesis levels in cardiomyocytes through FUNDC1-Mff.</b> Mitochondrial morphology and structural integrity testing (Mito-tracker); (B) Detection of mitochondrial membrane permeability transition pore(mPTP) opening degree; (C-D) Detection of mitochondrial fission driving protein expression level (Drp1/Fis1); (E-G) Detection of mitochondrial biosynthesis related gene transcription level (PGC1-&#945;/Tfam/Nrf-1); (H) Detection of mitochondrial pathway necrosis related apoptosis protein phosphorylation level(MLKL/RIPK3); Experiments were repeated at least three times and the data are shown as mean &#177; SEM (N=three independent cell isolations per group). *p&#60;0.05.</p><img  class='dispnewfig' src='/ms/getimage.php?name=ijbsv20p4458g006.jpg'  alt='Int J Biol Sci Image'  onclick="openPopupFig('/ms/getimage.php?name=ijbsv20p4458g006.jpg');"> 
+</div> <p>We generated an I/R injury model using NR4A1 transgenic mice and found that si-FUNDC1 and ad-FUNDC1 gene modifications in primary cardiomyocytes isolated from NR4A1 transgenic mice did not regulate mitophagy/biosynthesis or endoplasmic reticulum stress phenotypes (Figure <a href="#F7">7</a>A-N). These findings were further confirming the regulatory effect of NR4A1 on FUNDC1-mediated mitophagy.</p>
+<h2>NR4A1 improves myocardial cell activity following I/R by regulating Mff-related mitochondrial fission</h2><p>Although we have previously confirmed the regulatory mechanism of NR4A1 in FUNDC1-mediated mitophagy, the interactive regulatory mechanism by which NR4A1 promotes Mff-mediated mitochondrial fission remains to be validated. To insights into the mechanism underlying pathological mitochondrial fission disorders induced by I/R stress, we measured the levels of mito-fission and fragmentation in cardiomyocytes and examined the expression levels of mito-fission/fusion-driving proteins.</p><p>I/R led to excessive fission, thereby decreasing myocardial cell activity (Figure <a href="#F8">8</a>A-H). Notably, si-Mff intervention and si-Mff treatment based on the NR4A1 knockout inhibited excessive mitochondrial fission and restored mitochondrial fusion and myocardial cell activity (Figure <a href="#F8">8</a>A-H). However, Ad-Mff and NR4A1<sup>CKO</sup>\ad-Mff did not reverse these pathological changes (Figure <a href="#F8">8</a>A-H). Interestingly, si-Mff and ad-Mff treatments based on the NR4A1 transgenic model (NR4A1<sup>TG</sup>) did not reverse the mitochondrial pathological changes following I/R injury (Figure <a href="#F8">8</a>A-H), suggesting that NR4A1 regulates mitochondrial pathological fission through Mff and mediates myocardial cell damage via the mitochondrial pathway. We further explored the effects of NR4A1 regulation on the Mff-mediated abnormalities in mitochondrial fission during mitophagy and found that I/R injury led to the inhibition of mitophagy and excessive stress response to UPR<sup>mt</sup> (Figure <a href="#F8">8</a>I-S). Consistent with previous results, si-Mff intervention and si-Mff treatment based on NR4A1 gene knockout reversed the decrease in mitophagy levels and inhibited the excessive stress response of UPR<sup>mt</sup> (Figure <a href="#F8">8</a>I-S). However, ad-Mff or NR4A1<sup>CKO</sup> did not reverse these pathological changes, and si-Mff and ad-Mff treatments based on the NR4A1 transgenic model (NR4A1<sup>TG</sup>) did not reverse mitophagy dysfunction or the excessive stress response of unfolded proteins following I/R injury (Figure <a href="#F8">8</a>I-S). Furthermore, under I/R injury conditions, NR4A1 regulated Mff-mediated excessive mitochondrial fission, affecting mitophagy and protein homeostasis, thereby exacerbating pathological damage to myocardial cells.</p><p>To confirm the mechanism by which FUNDC1-mediated mitochondrial fission leads to myocardial I/R injury, we established FUNDC1 heart-specific knockout I/R models and FUNDC1 transgenic animal I/R models and conducted myocardial injury detection and mitophagy marker analysis. FUNDC1<sup>TG</sup> reversed myocardial injury after I/R, restored pathological changes in mitochondrial structure and morphology, enhanced mitophagy, and inhibited the inflammatory response in myocardial cells via mitochondrial pathways (Figure <a href="#F9">9</a> A-Q). However, FUNDC1 heart-specific knockout did not reverse the pathological response to myocardial injury (Figure <a href="#F9">9</a> A-Q). <i>In vivo</i>, FUNDC1-mediated mitophagy may be the core factor mediating mito-dysfunction and mitochondrial pathway inflammatory damage.</p> 
+<div class="ivytablediv" id="F7"><b>&nbsp;Figure 7</b>&nbsp;
+<p><b> NR4A1 disrupts the cytoskeleton homeostasis of myocardial cells after I/R injury by inhibiting FUNDC1-mediated mitophagy.</b> (A) CCK8 detection of myocardial cell activity; (B) Detection of cytoskeleton protein integrity in myocardial cells; (C-F) Expression and transcription levels of mitochondrial biosynthesis related proteins(PGC1-&#945;/Nrf-1/Tfam); (G-I) Transcriptional levels of endoplasmic reticulum stress-related genes(Atf-6/IRE1/PERK); (J-L) Expression level of mitochondrial respiratory chain complex(I/III/V); (M-N) Laser confocal detection of mitochondrial mitophagy marker TOM20 expression level;Experiments were repeated at least three times and the data are shown as mean &#177; SEM (N=three independent cell isolations per group). *p&#60;0.05.</p><img  class='dispnewfig' src='/ms/getimage.php?name=ijbsv20p4458g007.jpg'  alt='Int J Biol Sci Image'  onclick="openPopupFig('/ms/getimage.php?name=ijbsv20p4458g007.jpg');"> 
+</div> 
+<div class="ivytablediv" id="F8"><b>&nbsp;Figure 8</b>&nbsp;
+<p><b> NR4A1 improves myocardial cell activity after ischemia-reperfusion by regulating Mff related mitochondrial fission.</b> (A) Mitochondrial morphology and structural integrity testing (Mito-tracker); (B) The expression of mitochondrial fusion related proteins (Mfn1/Opa1) and mitochondrial fission related proteins (Drp-1/Fis1/Mff); (C) CCK8 detection of myocardial cell activity; (D-E) Detection of mitochondrial fission drive protein expression levels (Drp1/Fis1); (F-G) Detection of mitochondrial fusion motor protein expression levels (Opa1/Mfn1/Mfn2); (I-K) Fluorescence co localization detection of co localization expression of LC3 and Mito-Tracker; (L, N-S) Expression of UPR<sup>mt</sup> related genes (Atf5/HSP10/HSP60/Lonp1/CHOP/mtDNAj/ClpP); Experiments were repeated at least three times and the data are shown as mean &#177; SEM (N=three independent cell isolations per group). *p&#60;0.05.</p> <img  class='dispnewfig' src='/ms/getimage.php?name=ijbsv20p4458g008.jpg'  alt='Int J Biol Sci Image'  onclick="openPopupFig('/ms/getimage.php?name=ijbsv20p4458g008.jpg');"> 
+</div> 
+<div class="ivytablediv" id="F9"><b>&nbsp;Figure 9</b>&nbsp;
+<p><b> FUNDC1 improves ischemia-reperfusion myocarditis injury by regulating mitochondrial mitophagy.</b> (A) Detection of myocardial ischemic injury area by cardiac pathological staining (HE/Masson); (B) Detection of mitochondrial morphology and structural damage in myocardial tissue using transmission electron microscopy; (C) CK-MB expression level detection; (D) Detection of myocardial injury size(%); (E) Fibrosis level detection(%); (F-J) Detection of expression of inflammatory cytokine related proteins and mRNA expression; (K-N) Detection of expression of inflammatory cytokines and mitochondrial pathway apoptosis genes(IL-18/TNF-&#945;/MMP-9) (O-Q) Fluorescence co localization of TOM20/LC3 in myocardial tissue; Experiments were repeated at least three times and the data are shown as mean &#177; SEM. *P&#60;0.05.</p><img  class='dispnewfig' src='/ms/getimage.php?name=ijbsv20p4458g009.jpg'  alt='Int J Biol Sci Image'  onclick="openPopupFig('/ms/getimage.php?name=ijbsv20p4458g009.jpg');"> 
+</div> 
+
+<h1 class="articlegroup"  id="headingA4">Discussion</h1>
+
+<p>I/R injury remains a major clinical challenge and the leading cause of cardiovascular disease (CVD) incidence and mortality globally [<a href="#B35">35</a>; <a href="#B36">36</a>; <a href="#B37">37</a>]. Identifying new molecular targets may provide valuable insights into the pathophysiology of clinical I/R injury and guide innovative treatment strategies to reduce the increased mortality and poor prognosis associated with I/R myocardial injury [<a href="#B38">38</a>; <a href="#B39">39</a>]. In this study, we determined that NR4A1 was a significant pathological factor that promotedes I/R injury in mice using a genetically modified I/R animal model. Specifically, NR4A1 exacerbated myocarditis-induced injury following I/R and mediated the dysregulation of mitochondrial. Cardiac-specific knockout of NR4A1 reversed myocardial injury and ejection dysfunction caused by I/R, thereby maintaining normal cardiac function. Mechanistically, I/R injury led to mitochondrial homeostasis disorders manifested as mitochondrial respiratory chain dysfunction (decreased expression of mitochondrial respiratory chain complexes) and conditional activation of programmed cell death in the mitochondrial pathway. Notably, I/R-mediated mitochondrial pathological changes can be reversed by heart-specific NR4A1 knockout. Furthermore, NR4A1 directly affected mitochondrial fission/fusion, mitophagy, UPR<sup>mt</sup>, and the activation of mitochondrial biosynthesis via downstream mitochondrial phenotype-regulation mechanisms.</p><p>Using genetic modification technology combined with laser confocal microscopy, western blotting, PCR, and other experimental tests, we confirmed that NR4A1 exacerbated myocardial injury by inhibiting mitophagy and activating mito-fission. In summary, these results highlight the crucial roles of NR4A1- FUNDC1 mediated mitophagy and Mff-mediated mito-fission in mouse I/R injury. Therefore, this study explored targeted therapies that inhibit the binding of NR4A1 to FUNDC1/Mff, which may protect against I/R and improve the long-term prognosis of patients.</p><p>Abundant evidence supports the critical role of mitochondrial dysfunction in I/R. During myocardial cell damage caused by ischemia and hypoxia, a series of harmful mitochondrial signals are activated, including inflammatory storms, oxidative stress, abnormal energy metabolism, and cellular death processes [<a href="#B40">40</a>; <a href="#B41">41</a>; <a href="#B42">42</a>; <a href="#B43">43</a>]. These processes severely damage the structure of mitochondria, leading to the interaction mechanism of the endoplasmic reticulum and other related organelle damage [<a href="#B44">44</a>; <a href="#B45">45</a>; <a href="#B46">46</a>]. The mitochondrial quality control (MQC)involves a series of adaptive responses, including mitochondrial fission/fusion, mitophagy, biosynthesis, and UPR<sup>mt</sup>, the activation of which can alleviate mitochondrial damage, mediate the selective degradation of damaged or dysfunctional mitochondria, and ultimately maintain mitochondrial integrity and homeostasis [<a href="#B47">47</a>; <a href="#B48">48</a>; <a href="#B49">49</a>]. Mitochondrial dynamics (fusion/fission) and mitophagy play central roles in the regulation of the MQC [<a href="#B50">50</a>; <a href="#B51">51</a>].</p><p>Studies on mitochondrial fission have found that ROS levels in mouse cardiomyocytes increase to varying degrees following stress stimuli, such as myocardial I/R injury, LPS injury, and diabetes injury [<a href="#B52">52</a>; <a href="#B53">53</a>]. Concurrently, an increase in mito-fragmentation or a decrease in mito-length induces cell death. The exacerbation of mito-fragmentation mediated by I/R injury is often accompanied by increased expression of Drp1, Fis1, and Mff [<a href="#B54">54</a>; <a href="#B55">55</a>]. Additionally, siRNA treatment of Fis1 or Drp1/Mff inhibitsed mito-fission and myocardial cell damage [<a href="#B56">56</a>], indicating that mito-fission plays a central role in I/R injury.</p><p>Furthermore, the results suggested that I/R injury was accompanied by inhibition of the mitochondrial fusion, as well as a decrease in biosynthesis levels. Further investigation revealed that excessive pathological mitochondrial fission can increase damaged or nonfunctional mitochondria. These mitochondria cannot be engulfed by low-level mitophagy after stress damage, leading to dysregulation of mitochondrial protein homeostasis and mitochondrial energy metabolism, ultimately resulting in the activation of the mitochondrial cell death pathway [<a href="#B57">57</a>]. Research has confirmed that myocardial I/R injury can be attributed to Mff-dependent mito-fission through VDAC1-mediated mPTP opening and cyt-c release involving mitochondrial ROS/cardiolipin, which mediates the exacerbation of myocardial injury following I/R. However, knocking out NR4A1 can block the downstream damage mechanisms mediated by pathological mitochondrial fission. Transgenic NR4A1 also blocked the activation of mitophagy mediated by FUNDC1. These results confirm that NR4A1 regulates Mff-mediated mitochondrial fission, inhibits FUNDC1-mediated mitophagy, and activates the pan-apoptotic pathway [<a href="#B9">9</a>].</p><p>Based on this evidence, we inferred the critical mechanism by which NR4A1 mediates the abnormal expression of mitochondrial MFF and FUNDC1. These findings suggest that maintaining low NR4A1 expression during I/R may be an important protective strategy for maintaining cardiac function. NR4A1 plays a significant regulatory role in the control of cardiac metabolism, mitophagy, inflammatory damage, and mitochondrial biosynthesis. Studies have shown that NR4A1-mediated mitochondrial translocation is the primary target of semaglutide for the regulation of lipid metabolism and NR4A1 is involved in the regulation of cell apoptosis [<a href="#B58">58</a>]. Therefore, the expression of NR4A1 are key factors in mitochondrial dysfunction. Semaglutide regulates the expression of NR4A1, thereby improving ischemic myocardial injury [<a href="#B12">12</a>]. Additionally, one study identified a specific role of NR4A1 in oxidative stress induced by myocardial infarction (MI) in elderly mice, consistent with our experimental results, suggesting that ROS-mediated mitochondrial homeostasis disruption may be an important regulatory mechanism of NR4A1 [<a href="#B59">59</a>].</p><p>Previous studies confirmed that an imbalance in mitochondrial homeostasis is the core pathological regulatory phenotype of NR4A1. However, this study validated the mechanism by which NR4A1 activates mitochondrial cell death through Mff-mediated mitochondrial pathological fission.</p><p>Mitochondria are dynamic and unstable cellular organelles. Under normal conditions, mitochondrial fission provides sustained ATP for homeostasis of the intracellular environment and participates in the regulation of multiple pathways, such as cytoskeletal stability and cellular energy metabolism, ultimately determining the life cycle of myocardial cells [<a href="#B60">60</a>; <a href="#B61">61</a>]. Research has shown that Mff mutant mice die of heart failure due to severe dilated cardiomyopathy. Mff mutations mediate the destruction of mitochondrial morphology and structure and reduce mitochondrial respiratory chain activity, leading to cardiac dysfunction and shortened lifespan in mice. However, regulating the balance of Mfn1/Mff expression can mediate the normalization of mitochondrial fusion and fission, thereby restoring tissue integrity and mitochondrial physiology at the cardiac level [<a href="#B62">62</a>]. Examination of the liver, testes, and cerebellum indicates that the precise balance between fusion and fission is cell-type specific [<a href="#B63">63</a>]. During ischemia-reperfusion injury, Drp1 is significantly upregulated, and its mediated mitochondrial fission leads to the breakdown of mitochondrial protein homeostasis, lipid homeostasis, mitochondrial DNA regeneration, and the ATP supply system [<a href="#B52">52</a>]. Previous studies primarily focused on the role of mitochondrial fission mediated by Drp1 and Fis1 motor proteins in myocardial, kidney, and liver injury [<a href="#B64">64</a>]. Evidence suggesting changes in the expression or upstream regulatory mechanisms of Drp1 receptors is limited, especially Mff. One study found that the increased expression of Mff in coronary microvessels following I/R injury leads to an expansion of infarct size and cardiac dysfunction. The authors showed that Mff upregulation was related to significant microcirculation perfusion defects, blood flow disorders, and structural damage to microvascular endothelial cells, which reversed the pathological mechanism mentioned above. The results also showed that Mff upregulation can lead to excessive division by promoting the translocation of Drp1 to the mitochondria, whereas Mff knockout can inhibit the migration of Drp1 to the mitochondria, thereby suppressing pathological mitochondrial fission [<a href="#B9">9</a>].</p><p>This is consistent with our results, where, under the regulation of NR4A1, Mff can mediate the activation of pathological mitochondrial fission and lead to the dysregulation of mitochondrial protein homeostasis and excessive stress of the UPR<sup>mt</sup>. This process also leads to the breakdown of mitophagy and biosynthesis mechanisms, preventing the normal synthesis of newly formed mitochondrial DNA and ultimately mediating the activation of the mitochondrial apoptotic pathway. Notably, NR4A1-mediated Mff can lead to significant defects in FUNDC1-mediated mitophagy.</p><p>FUNDC1 is a mitochondrial outer membrane protein [<a href="#B65">65</a>]. The absence of FUNDC1 significantly inhibits hypoxia-induced mitophagy, indicating that FUNDC1 functions as a mitophagy receptor [<a href="#B33">33</a>]. FUNDC1 is primarily involved in mitophagy triggered by ischemia, hypoxia, and decreased mitochondrial membrane potential. The associated mechanisms are intricately linked to SRC kinase, casein kinase 2 (CK2) kinase, and phosphoglycerate mutase 5 (PGAM5) phosphatase. Additionally, we explored the relationship between these kinases and cardiac injury [<a href="#B5">5</a>; <a href="#B6">6</a>; <a href="#B7">7</a>; <a href="#B66">66</a>]. Following I/R injury, the expression level of mitophagy predominantly depends on the phosphorylation and dephosphorylation status of serine 17 (Ser17), serine 13 (Ser13), and tyrosine 18 (Tyr18) sites on the LI/R motif of FUNDC1. This motif is the principal therapeutic target for innovative drug development [<a href="#B33">33</a>].</p><p>In this study, NR4A1 significantly regulated the phosphorylation of FUNDC1 at the Tyr18 site, thereby mediating ischemia-reperfusion injury and programmed cell death. Our results also indicated that Mff-mediated mitochondrial pathological fission was exacerbated and showed FUNDC1-mediated inhibition of mitophagy. However, heart-specific knockout of NR4A1 significantly reversed this phenomenon by blocking pan-apoptosis and improving myocardial cell activity. This finding suggests NR4A1 as an upstream regulatory target of MFF and FUNDC1 and a critical protein mediating I/R mitochondrial damage. These findings provide novel insights into the roles of NR4A1 in the mitochondrial fission-mitophagy crosstalk associated with I/R injury.</p><p>This study has some limitations. We did not conduct differential experimental studies on myocardial cell pan-apoptotic tool drugs in mice with I/R. Our preliminary data showed that necroptosis, mitophagy, and mitochondrial fission inhibitors exerted varying degrees of regulatory effects, both positive and negative, on mitochondrial function in myocardial cells. However, in this study, due to the limitations of animal experiments, we did not include related therapeuticdrug-related grouping. In future studies, we intend to conduct relevant drug experiments. The second limitation is the interference between mitophagy and fission. We could not confirm the interaction mechanism between NR4A1, Mff, and FUNDC1 using immunoprecipitation. In future studies, we intend to conduct interaction mechanistic experiments to confirm the interference mechanism between Mff-mediated mito-fission and FUNDC1-mediated mitophagy. Additionally, transgenic animal systems related to MFF were not included in this study. In future studies, we intend to breed Mff-related genetically modified animal systems to confirm the regulatory role of Mff-mediated mitochondrial fission in ischemic cardiomyopathy. Nevertheless, the findings of this study, combined with evidence that NR4A1 is a potential therapeutic target, provide novel insights into new personalized therapies targeting I/R.</p>
+
+<h1 class="articlegroup"  id="SM0">Supplementary Material</h1>
+
+
+<a href="v20/p4458/ijbsv20p4458s1.pdf" id="SM1" type="applicationn/pdf">
+ <p>Supplementary figures.</p>
+<img src='/ms/images/multipage.gif' width='8' height='11' alt='Attachment'></a>
+
+<h1 class="articlegroup"  id="headingA5">Acknowledgements</h1>
+
+<p>This work was supported by grants from the National Natural Science Foundation of China (No. 82204990, 82305114), Natural Science Foundation of Liaoning Provincial (No. 2023-BS-136, 2023-MS-227).</p>
+<h2>Data availability</h2><p>The data that support the findings of this study are available within the paper and its supplementary information files and from the corresponding author upon reasonable request.</p>
+
+<h1 class="articlegroup"  id="headingA6">Competing Interests</h1>
+
+<p>The authors have declared that no competing interest exists.</p>
+
+
+<h1 class="articlegroup"  id="headingA7">References</h1>
+
+ <p class="reference" id="B1"> 1. 
+George J, Lu Y, Tsuchishima M, Tsutsumi M.  <b>Cellular and molecular mechanisms of hepatic ischemia-reperfusion injury: The role of oxidative stress and therapeutic approaches</b>.  <i>Redox biology. </i>  2024;<b>75</b>:103258
+</p><p class="reference" id="B2"> 2. 
+Chang X, Zhou S, Liu J, Wang Y, Guan X, Wu Q.  <i>et al</i>.  <b>Zishenhuoxue decoction-induced myocardial protection against ischemic injury through TMBIM6-VDAC1-mediated regulation of calcium homeostasis and mitochondrial quality surveillance</b>.  <i>Phytomedicine: international journal of phytotherapy and phytopharmacology. </i>  2023;<b>132</b>:155331
+</p><p class="reference" id="B3"> 3. 
+Li Y, Yu J, Li R, Zhou H, Chang X.  <b>New insights into the role of mitochondrial metabolic dysregulation and immune infiltration in septic cardiomyopathy by integrated bioinformatics analysis and experimental validation</b>.  <i>Cell Mol Biol Lett. </i>  2024;<b>29</b>:21
+</p><p class="reference" id="B4"> 4. 
+Pu X, Zhang Q, Liu J, Wang Y, Guan X, Wu Q.  <i>et al</i>.  <b>Ginsenoside Rb1 ameliorates heart failure through DUSP-1-TMBIM-6-mediated mitochondrial quality control and gut flora interactions</b>.  <i>Phytomedicine: international journal of phytotherapy and phytopharmacology. </i>  2024;<b>132</b>:155880
+</p><p class="reference" id="B5"> 5. 
+Chang X, Zhou S, Liu J, Wang Y, Guan X, Wu Q.  <i>et al</i>.  <b>Zishen Tongyang Huoxue decoction (TYHX) alleviates sinoatrial node cell ischemia/reperfusion injury by directing mitochondrial quality control via the VDAC1-&#946;-tubulin signaling axis</b>.  <i>Journal of ethnopharmacology. </i>  2024;<b>320</b>:117371
+</p><p class="reference" id="B6"> 6. 
+Wang Y, Ren T, Li C, Wu Q, Liu J, Guan X.  <i>et al</i>.  <b>Mechanisms involved in the regulation of mitochondrial quality control by PGAM5 in heart failure</b>.  <i>Cell Stress Chaperones. </i>  2024;<b>29</b>:510-8
+</p><p class="reference" id="B7"> 7. 
+Chang X, Zhang Q, Huang Y, Liu J, Wang Y, Guan X.  <i>et al</i>.  <b>Quercetin inhibits necroptosis in cardiomyocytes after ischemia-reperfusion via DNA-PKcs-SIRT5-orchestrated mitochondrial quality control</b>.  <i>Phytother Res. </i>  2024;<b>38</b>:2496-517
+</p><p class="reference" id="B8"> 8. 
+Wang T, Xing G, Fu T, Ma Y, Wang Q, Zhang S.  <i>et al</i>.  <b>Role of mitochondria in doxorubicin-mediated cardiotoxicity: from molecular mechanisms to therapeutic strategies</b>.  <i>Int J Med Sci. </i>  2024;<b>21</b>:809-16
+</p><p class="reference" id="B9"> 9. 
+Zhou H, Hu S, Jin Q, Shi C, Zhang Y, Zhu P.  <i>et al</i>.  <b>Mff-Dependent Mitochondrial Fission Contributes to the Pathogenesis of Cardiac Microvasculature Ischemia/Reperfusion Injury via Induction of mROS-Mediated Cardiolipin Oxidation and HK2/VDAC1 Disassociation-Involved mPTP Opening</b>.  <i>J Am Heart Assoc. </i>  2017;<b>6</b>:e005328
+</p><p class="reference" id="B10"> 10. 
+Jin Q, Li R, Hu N, Xin T, Zhu P, Hu S.  <i>et al</i>.  <b>DUSP1 alleviates cardiac ischemia/reperfusion injury by suppressing the Mff-required mitochondrial fission and Bnip3-related mitophagy via the JNK pathways</b>.  <i>Redox biology. </i>  2018;<b>14</b>:576-87
+</p><p class="reference" id="B11"> 11. 
+Huang M, Pieraut S, Cao J, de Souza Polli F, Roncace V, Shen G.  <i>et al</i>.  <b>Nr4a1 regulates cell-specific transcriptional programs in inhibitory GABAergic interneurons</b>.  <i>Neuron. </i>  2024;<b>112</b>:2031-44.e7
+</p><p class="reference" id="B12"> 12. 
+Ma YL, Kong CY, Guo Z, Wang MY, Wang P, Liu FY.  <i>et al</i>.  <b>Semaglutide ameliorates cardiac remodeling in male mice by optimizing energy substrate utilization through the Creb5/NR4a1 axis</b>.  <i>Nat Commun. </i>  2024;<b>15</b>:4757
+</p><p class="reference" id="B13"> 13. 
+Hao J, Li R, Zhao X, Liu X, Chen X, Xie T.  <i>et al</i>.  <b>NR4A1 transcriptionally regulates the differentiation of stem-like CD8(+) T cells in the tumor microenvironment</b>.  <i>Cell reports. </i>  2024;<b>43</b>:114301
+</p><p class="reference" id="B14"> 14. 
+Wang D, Yin Y, Wang S, Zhao T, Gong F, Zhao Y.  <i>et al</i>.  <b>FGF1(&#916;HBS) prevents diabetic cardiomyopathy by maintaining mitochondrial homeostasis and reducing oxidative stress via AMPK/Nur77 suppression</b>.  <i>Signal transduction and targeted therapy. </i>  2021;<b>6</b>:133
+</p><p class="reference" id="B15"> 15. 
+Kumar A, Hill TM, Gordy LE, Suryadevara N, Wu L, Flyak AI.  <i>et al</i>.  <b>Nur77 controls tolerance induction, terminal differentiation, and effector functions in semi-invariant natural killer T cells</b>.  <i>Proceedings of the National Academy of Sciences of the United States of America. </i>  2020;<b>117</b>:17156-65
+</p><p class="reference" id="B16"> 16. 
+Zhang H, Geng N, Sun L, Che X, Xiao Q, Tao Z.  <i>et al</i>.  <b>Nuclear Receptor Nur77 Protects Against Abdominal Aortic Aneurysm by Ameliorating Inflammation Via Suppressing LOX-1</b>.  <i>J Am Heart Assoc. </i>  2021;<b>10</b>:e021707
+</p><p class="reference" id="B17"> 17. 
+Li M, Hu Y, Zhou H, Chen Y.  <b>NR4A1 Aggravates Myocardial Ischaemia-Reperfusion Injury by Inhibiting OPA1-Mediated Mitochondrial Fusion</b>.  <i>J Cardiovasc Transl Res. </i>  2023;<b>16</b>:1050-63
+</p><p class="reference" id="B18"> 18. 
+Zhu Y, Han XQ, Sun XJ, Yang R, Ma WQ, Liu NF.  <b>Lactate accelerates vascular calcification through NR4A1-regulated mitochondrial fission and BNIP3-related mitophagy</b>.  <i>Apoptosis. </i>  2020;<b>25</b>:321-40
+</p><p class="reference" id="B19"> 19. 
+Zhou H, Du W, Li Y, Shi C, Hu N, Ma S.  <i>et al</i>.  <b>Effects of melatonin on fatty liver disease: The role of NR4A1/DNA-PKcs/p53 pathway, mitochondrial fission, and mitophagy</b>. 
+ <i>Journal of pineal research. </i>  2018 64
+</p><p class="reference" id="B20"> 20. 
+Chen J, Jia J, Ma L, Li B, Qin Q, Qian J.  <i>et al</i>.  <b>Nur77 deficiency exacerbates cardiac fibrosis after myocardial infarction by promoting endothelial-to-mesenchymal transition</b>.  <i>Journal of cellular physiology. </i>  2021;<b>236</b>:495-506
+</p><p class="reference" id="B21"> 21. 
+Zhou H, Zhu P, Guo J, Hu N, Wang S, Li D.  <i>et al</i>.  <b>Ripk3 induces mitochondrial apoptosis via inhibition of FUNDC1 mitophagy in cardiac IR injury</b>.  <i>Redox biology. </i>  2017;<b>13</b>:498-507
+</p><p class="reference" id="B22"> 22. 
+Zhou H, Toan S, Zhu P, Wang J, Ren J, Zhang Y.  <b>DNA-PKcs promotes cardiac ischemia reperfusion injury through mitigating BI-1-governed mitochondrial homeostasis</b>.  <i>Basic research in cardiology. </i>  2020;<b>115</b>:11
+</p><p class="reference" id="B23"> 23. 
+Pang B, Dong G, Pang T, Sun X, Liu X, Nie Y.  <i>et al</i>.  <b>Emerging insights into the pathogenesis and therapeutic strategies for vascular endothelial injury-associated diseases: focus on mitochondrial dysfunction</b>. 
+ <i>Angiogenesis. </i>  2024
+</p><p class="reference" id="B24"> 24. 
+Chang X, Lochner A, Wang HH, Wang S, Zhu H, Ren J.  <i>et al</i>.  <b>Coronary microvascular injury in myocardial infarction: perception and knowledge for mitochondrial quality control</b>.  <i>Theranostics. </i>  2021;<b>11</b>:6766-85
+</p><p class="reference" id="B25"> 25. 
+Sun D, Wang J, Toan S, Muid D, Li R, Chang X.  <i>et al</i>.  <b>Molecular mechanisms of coronary microvascular endothelial dysfunction in diabetes mellitus: focus on mitochondrial quality surveillance</b>.  <i>Angiogenesis. </i>  2022;<b>25</b>:307-29
+</p><p class="reference" id="B26"> 26. 
+Chang X, Li Y, Cai C, Wu F, He J, Zhang Y.  <i>et al</i>.  <b>Mitochondrial quality control mechanisms as molecular targets in diabetic heart</b>.  <i>Metabolism: clinical and experimental. </i>  2022;<b>137</b>:155313
+</p><p class="reference" id="B27"> 27. 
+Chang X, Toan S, Li R, Zhou H.  <b>Therapeutic strategies in ischemic cardiomyopathy: Focus on mitochondrial quality surveillance</b>.  <i>EBioMedicine. </i>  2022;<b>84</b>:104260
+</p><p class="reference" id="B28"> 28. 
+Chang X, Li Y, Liu J, Wang Y, Guan X, Wu Q.  <i>et al</i>.  <b>&#223;-tubulin contributes to Tongyang Huoxue decoction-induced protection against hypoxia/reoxygenation-induced injury of sinoatrial node cells through SIRT1-mediated regulation of mitochondrial quality surveillance</b>.  <i>Phytomedicine: international journal of phytotherapy and phytopharmacology. </i>  2023;<b>108</b>:154502
+</p><p class="reference" id="B29"> 29. 
+Chang X, Ismail NI, Rahman A, Xu D, Chan RWY, Ong SG.  <i>et al</i>.  <b>Long COVID-19 and the Heart: Is Cardiac Mitochondria the Missing Link?</b>  <i>Antioxidants &#38; redox signaling. </i>  2023;<b>38</b>:599-618
+</p><p class="reference" id="B30"> 30. 
+Chang X, Liu R, Li R, Peng Y, Zhu P, Zhou H.  <b>Molecular Mechanisms of Mitochondrial Quality Control in Ischemic Cardiomyopathy</b>.  <i>International journal of biological sciences. </i>  2023;<b>19</b>:426-48
+</p><p class="reference" id="B31"> 31. 
+Chang X, Liu J, Wang Y, Guan X, Liu R.  <b>Mitochondrial disorder and treatment of ischemic cardiomyopathy: Potential and advantages of Chinese herbal medicine</b>.  <i>Biomedicine &#38; pharmacotherapy = Biomedecine &#38; pharmacotherapie. </i>  2023;<b>159</b>:114171
+</p><p class="reference" id="B32"> 32. 
+Wang W, Li E, Zou J, Qu C, Ayala J, Wen Y.  <i>et al</i>.  <b>Ubiquitin Ligase RBX2/SAG Regulates Mitochondrial Ubiquitination and Mitophagy</b>.  <i>Circulation research. </i>  2024;<b>135</b>:e39-e56
+</p><p class="reference" id="B33"> 33. 
+He W, Sun Z, Tong G, Zeng L, He W, Chen X.  <i>et al</i>.  <b>FUNDC1 alleviates doxorubicin-induced cardiotoxicity by restoring mitochondrial-endoplasmic reticulum contacts and blocked autophagic flux</b>.  <i>Theranostics. </i>  2024;<b>14</b>:3719-38
+</p><p class="reference" id="B34"> 34. 
+D&#237;az-Guerra A, Villena-Guti&#233;rrez R, Clemente-Morag&#243;n A, G&#243;mez M, Oliver E, Fern&#225;ndez-Tocino M.  <i>et al</i>.  <b>Anthracycline Cardiotoxicity Induces Progressive Changes in Myocardial Metabolism and Mitochondrial Quality Control: Novel Therapeutic Target</b>.  <i>JACC CardioOncol. </i>  2024;<b>6</b>:217-32
+</p><p class="reference" id="B35"> 35. 
+Liu T, Hao Y, Zhang Z, Zhou H, Peng S, Zhang D.  <i>et al</i>.  <b>Advanced Cardiac Patches for the Treatment of Myocardial Infarction</b>.  <i>Circulation. </i>  2024;<b>149</b>:2002-20
+</p><p class="reference" id="B36"> 36. 
+Welt FGP, Batchelor W, Spears JR, Penna C, Pagliaro P, Ibanez B.  <i>et al</i>.  <b>Reperfusion Injury in Patients With Acute Myocardial Infarction: JACC Scientific Statement</b>.  <i>Journal of the American College of Cardiology. </i>  2024;<b>83</b>:2196-213
+</p><p class="reference" id="B37"> 37. 
+Qi M, Su X, Li Z, Huang H, Wang J, Lin N.  <i>et al</i>.  <b>Bibliometric analysis of research progress on tetramethylpyrazine and its effects on ischemia-reperfusion injury</b>.  <i>Pharmacol Ther. </i>  2024;<b>259</b>:108656
+</p><p class="reference" id="B38"> 38. 
+Bertero E, Popoiu TA, Maack C.  <b>Mitochondrial calcium in cardiac ischemia/reperfusion injury and cardioprotection</b>.  <i>Basic research in cardiology. </i>  2024;<b>119</b>:569-585
+</p><p class="reference" id="B39"> 39. 
+Wang Z, Zhang G, Hu S, Fu M, Zhang P, Zhang K.  <i>et al</i>.  <b>Research progress on the protective effect of hormones and hormone drugs in myocardial ischemia-reperfusion injury</b>.  <i>Biomedicine &#38; pharmacotherapy = Biomedecine &#38; pharmacotherapie. </i>  2024;<b>176</b>:116764
+</p><p class="reference" id="B40"> 40. 
+Zhang F, Zhang L, Hu G, Chen X, Liu H, Li C.  <i>et al</i>.  <b>Rectifying METTL4-Mediated N(6)-Methyladenine Excess in Mitochondrial DNA Alleviates Heart Failure</b>. 
+ <i>Circulation. </i>  2024
+</p><p class="reference" id="B41"> 41. 
+Mendoza A, Patel P, Robichaux D, Ramirez D, Karch J.  <b>Inhibition of the mPTP and Lipid Peroxidation Is Additively Protective Against I/R Injury</b>.  <i>Circulation research. </i>  2024;<b>134</b>:1292-305
+</p><p class="reference" id="B42"> 42. 
+Johnson TW, Holt J, Kleyman A, Zhou S, Sammut E, Bruno VD.  <i>et al</i>.  <b>Development and translation of thiometallate sulfide donors using a porcine model of coronary occlusion and reperfusion</b>.  <i>Redox biology. </i>  2024;<b>73</b>:103167
+</p><p class="reference" id="B43"> 43. 
+Liu X, Meng Q, Shi S, Geng X, Wang E, Li Y.  <i>et al</i>.  <b>Cardiac-derived extracellular vesicles improve mitochondrial function to protect the heart against ischemia/reperfusion injury by delivering ATP5a1</b>.  <i>J Nanobiotechnology. </i>  2024;<b>22</b>:385
+</p><p class="reference" id="B44"> 44. 
+Baumgardt SL, Fang J, Fu X, Liu Y, Xia Z, Zhao M.  <i>et al</i>.  <b>Genetic deletion or pharmacologic inhibition of HDAC6 protects the heart against ischemia/reperfusion injury by limiting TNF&#945;-induced mitochondrial injury in experimental diabetes</b>. 
+ <i>Cardiovascular research. 2024: cvae144. </i> 
+
+</p><p class="reference" id="B45"> 45. 
+Rudokas MW, McKay M, Toksoy Z, Eisen JN, B&#246;gner M, Young LH.  <i>et al</i>.  <b>Mitochondrial network remodeling of the diabetic heart: implications to ischemia related cardiac dysfunction</b>.  <i>Cardiovasc Diabetol. </i>  2024;<b>23</b>:261
+</p><p class="reference" id="B46"> 46. 
+Abe J, Vujic A, Prag HA, Murphy MP, Krieg T.  <b>Malonate given at reperfusion prevents post-myocardial infarction heart failure by decreasing ischemia/reperfusion injury</b>.  <i>Basic research in cardiology. </i>  2024;<b>119</b>:691-697
+</p><p class="reference" id="B47"> 47. 
+Kim J, Goldstein M, Zecchel L, Ghorayeb R, Maxwell CA, Weidberg H.  <b>ATAD1 prevents clogging of TOM and damage caused by un-imported mitochondrial proteins</b>.  <i>Cell reports. </i>  2024;<b>43</b>:114473
+</p><p class="reference" id="B48"> 48. 
+Yildirim RM, Seli E.  <b>Mitochondria as therapeutic targets in assisted reproduction</b>. 
+ <i>Hum Reprod. 2024: deae170. </i> 
+
+</p><p class="reference" id="B49"> 49. 
+Ma L, Chang X, Gao J, Zhang Y, Chen Y, Zhou H.  <i>et al</i>.  <b>METTL3 boosts mitochondrial fission and induces cardiac fibrosis after ischemia/reperfusion injury</b>.  <i>International journal of biological sciences. </i>  2024;<b>20</b>:433-45
+</p><p class="reference" id="B50"> 50. 
+Zhou H, Ren J, Toan S, Mui D.  <b>Role of mitochondrial quality surveillance in myocardial infarction: From bench to bedside</b>.  <i>Ageing research reviews. </i>  2021;<b>66</b>:101250
+</p><p class="reference" id="B51"> 51. 
+Zhu H, Toan S, Mui D, Zhou H.  <b>Mitochondrial quality surveillance as a therapeutic target in myocardial infarction</b>.  <i>Acta physiologica (Oxford, England). </i>  2021;<b>231</b>:e13590
+</p><p class="reference" id="B52"> 52. 
+Yan M, Gao J, Lan M, Wang Q, Cao Y, Zheng Y.  <i>et al</i>.  <b>DEAD-box helicase 17 (DDX17) protects cardiac function by promoting mitochondrial homeostasis in heart failure</b>.  <i>Signal transduction and targeted therapy. </i>  2024;<b>9</b>:127
+</p><p class="reference" id="B53"> 53. 
+Shu S, Cui H, Liu Z, Zhang H, Yang Y, Chen X.  <i>et al</i>.  <b>Suppression of RCAN1 alleviated lipid accumulation and mitochondrial fission in diabetic cardiomyopathy</b>.  <i>Metabolism: clinical and experimental. </i>  2024;<b>158</b>:155977
+</p><p class="reference" id="B54"> 54. 
+Duan Y, Li Q, Wu J, Zhou C, Liu X, Yue J.  <i>et al</i>.  <b>A detrimental role of endothelial S1PR2 in cardiac ischemia-reperfusion injury via modulating mitochondrial dysfunction, NLRP3 inflammasome activation, and pyroptosis</b>.  <i>Redox biology. </i>  2024;<b>75</b>:103244
+</p><p class="reference" id="B55"> 55. 
+Liu D, Qin H, Gao Y, Sun M, Wang M.  <b>Cardiovascular disease: Mitochondrial dynamics and mitophagy crosstalk mechanisms with novel programmed cell death and macrophage polarisation</b>.  <i>Pharmacological research. </i>  2024;<b>206</b>:107258
+</p><p class="reference" id="B56"> 56. 
+Wang S, Zhu H, Li R, Mui D, Toan S, Chang X.  <i>et al</i>.  <b>DNA-PKcs interacts with and phosphorylates Fis1 to induce mitochondrial fragmentation in tubular cells during acute kidney injury</b>.  <i>Science signaling. </i>  2022;<b>15</b>:eabh1121
+</p><p class="reference" id="B57"> 57. 
+Liu BH, Xu CZ, Liu Y, Lu ZL, Fu TL, Li GR.  <i>et al</i>.  <b>Mitochondrial quality control in human health and disease</b>.  <i>Mil Med Res. </i>  2024;<b>11</b>:32
+</p><p class="reference" id="B58"> 58. 
+Qin J, Liu L, Liu L, Zhou Z, Zhou Y, Zhang K.  <i>et al</i>.  <b>The effect of regulating MCU expression on experimental ischemic brain injury</b>.  <i>Exp Neurol. </i>  2023;<b>362</b>:114329
+</p><p class="reference" id="B59"> 59. 
+Peng X, Wang W, Wang W, Qi J.  <b>NR4A1 promotes oxidative stresses after myocardial ischemia reperfusion injury in aged mice</b>.  <i>Exp Gerontol. </i>  2022;<b>162</b>:111742
+</p><p class="reference" id="B60"> 60. 
+Hinton A Jr, Claypool SM, Neikirk K, Senoo N, Wanjalla CN, Kirabo A.  <i>et al</i>.  <b>Mitochondrial Structure and Function in Human Heart Failure</b>.  <i>Circulation research. </i>  2024;<b>135</b>:372-96
+</p><p class="reference" id="B61"> 61. 
+Liu C, Wei W, Huang Y, Fu P, Zhang L, Zhao Y.  <b>Metabolic reprogramming in septic acute kidney injury: pathogenesis and therapeutic implications</b>.  <i>Metabolism: clinical and experimental. </i>  2024;<b>158</b>:155974
+</p><p class="reference" id="B62"> 62. 
+Xu H, Song X, Zhang X, Wang G, Cheng X, Zhang L.  <i>et al</i>.  <b>SIRT1 regulates mitochondrial fission to alleviate high altitude hypoxia inducedcardiac dysfunction in rats via the PGC-1&#945;-DRP1/FIS1/MFF pathway</b>. 
+ <i>Apoptosis. </i>  2024
+</p><p class="reference" id="B63"> 63. 
+Mar&#237;n-Garc&#237;a J, Akhmedov AT.  <b>Mitochondrial dynamics and cell death in heart failure</b>.  <i>Heart failure reviews. </i>  2016;<b>21</b>:123-36
+</p><p class="reference" id="B64"> 64. 
+Quiles JM, Gustafsson &#197; B.  <b>The role of mitochondrial fission in cardiovascular health and disease</b>.  <i>Nature reviews Cardiology. </i>  2022;<b>19</b>:723-36
+</p><p class="reference" id="B65"> 65. 
+Wang C, Dai X, Wu S, Xu W, Song P, Huang K.  <i>et al</i>.  <b>Author Correction: FUNDC1-dependent mitochondria-associated endoplasmic reticulum membranes are involved in angiogenesis and neoangiogenesis</b>.  <i>Nat Commun. </i>  2024;<b>15</b>:4572
+</p><p class="reference" id="B66"> 66. 
+Zhou H, Dai Z, Li J, Wang J, Zhu H, Chang X.  <i>et al</i>.  <b>TMBIM6 prevents VDAC1 multimerization and improves mitochondrial quality control to reduce sepsis-related myocardial injury</b>.  <i>Metabolism: clinical and experimental. </i>  2023;<b>140</b>:155383
+</p>  
+<h1 class="articlegroup"  id="coraddress">Author contact</h1>
+
+<p><img src='/ms/images/email.gif' width='16' height='16' alt="Corresponding address"> Corresponding authors: xingchang_tcm<script>
+  <!--
+  var thismailbody2 = "";
+  var thismailbody4 = "";
+  var thismailbody1  = "";
+  var thismailbody3  = "";
+  var thismailbody11 = "";
+  var thismailbody12 = "outloo";
+thismailbody12 = thismailbody12+thismailbody11;
+thismailbody4 =    thismailbody4 + "&#6";
+thismailbody1 = thismailbody12+"k&"+"#x";
+thismailbody4 =    thismailbody4 + "4;";
+thismailbody3 =    thismailbody1;
+thismailbody3 = thismailbody3+"2e;";
+
+  document.write(thismailbody4 + thismailbody3+thismailbody2)
+  //-->
+</script>com (Xing Chang); lichun19850204<script>
+  <!--
+  var thismailbody2 = "";
+  var thismailbody4 = "";
+  var thismailbody1  = "";
+  var thismailbody3  = "";
+  var thismailbody11 = "";
+  var thismailbody12 = "16";
+thismailbody12 = thismailbody12+thismailbody11;
+thismailbody4 =    thismailbody4 + "&#6";
+thismailbody1 = thismailbody12+"3&"+"#x";
+thismailbody4 =    thismailbody4 + "4;";
+thismailbody3 =    thismailbody1;
+thismailbody3 = thismailbody3+"2e;";
+
+  document.write(thismailbody4 + thismailbody3+thismailbody2)
+  //-->
+</script>com (Chun Li); angelazhang301<script>
+  <!--
+  var thismailbody2 = "";
+  var thismailbody4 = "";
+  var thismailbody1  = "";
+  var thismailbody3  = "";
+  var thismailbody11 = "";
+  var thismailbody12 = "16";
+thismailbody12 = thismailbody12+thismailbody11;
+thismailbody4 =    thismailbody4 + "&#6";
+thismailbody1 = thismailbody12+"3&"+"#x";
+thismailbody4 =    thismailbody4 + "4;";
+thismailbody3 =    thismailbody1;
+thismailbody3 = thismailbody3+"2e;";
+
+  document.write(thismailbody4 + thismailbody3+thismailbody2)
+  //-->
+</script>com (Ying Zhang).</p>
+<hr class='nice'><h1  id='other_styles'>Citation styles</h1><div><b>APA <button  class='textbutton' title='Copy to clipboard' onclick="any2clipboard('ivyciteID3')">Copy</button></b><br><div id='ivyciteID3'>Wang, J., Zhuang, H., Jia, L., He, X., Zheng, S., Ji, K., Xie, K., Ying, T., Zhang, Y., Li, C., Chang, X. (2024). Nuclear receptor subfamily 4 group A member 1 promotes myocardial ischemia/reperfusion injury through inducing mitochondrial fission factor-mediated mitochondrial fragmentation and inhibiting FUN14 domain containing 1-depedent mitophagy. <i>International Journal of Biological Sciences</i>, 20(11), 4458-4475. https://doi.org/10.7150/ijbs.95853.  
+</div></div>
+<br><div><b>ACS <button  class='textbutton' title='Copy to clipboard' onclick="any2clipboard('ivyciteID1')">Copy</button></b><br><div id='ivyciteID1'>Wang, J.; Zhuang, H.; Jia, L.; He, X.; Zheng, S.; Ji, K.; Xie, K.; Ying, T.; Zhang, Y.; Li, C.; Chang, X. Nuclear receptor subfamily 4 group A member 1 promotes myocardial ischemia/reperfusion injury through inducing mitochondrial fission factor-mediated mitochondrial fragmentation and inhibiting FUN14 domain containing 1-depedent mitophagy. <i>Int. J. Biol. Sci.</i> 2024, 20 (11), 4458-4475. DOI: 10.7150/ijbs.95853.  
+</div></div>
+<br>
+<div><b>NLM <button  class='textbutton' title='Copy to clipboard' onclick="any2clipboard('ivyciteID2')">Copy</button></b><br><div id='ivyciteID2'>Wang J, Zhuang H, Jia L, He X, Zheng S, Ji K, Xie K, Ying T, Zhang Y, Li C, Chang X. Nuclear receptor subfamily 4 group A member 1 promotes myocardial ischemia/reperfusion injury through inducing mitochondrial fission factor-mediated mitochondrial fragmentation and inhibiting FUN14 domain containing 1-depedent mitophagy. <i>Int J Biol Sci</i> 2024; 20(11):4458-4475. doi:10.7150/ijbs.95853. https://www.ijbs.com/v20p4458.htm 
+</div></div>
+
+<br>
+<div><b>CSE <button  class='textbutton' title='Copy to clipboard' onclick="any2clipboard('ivyciteID4')">Copy</button></b><br><div id='ivyciteID4'>Wang J, Zhuang H, Jia L, He X, Zheng S, Ji K, Xie K, Ying T, Zhang Y, Li C, Chang X.  2024. Nuclear receptor subfamily 4 group A member 1 promotes myocardial ischemia/reperfusion injury through inducing mitochondrial fission factor-mediated mitochondrial fragmentation and inhibiting FUN14 domain containing 1-depedent mitophagy. <i>Int J Biol Sci</i>. 20(11):4458-4475.</div></div>
+
+<br><div class='divbox'>This is an open access article distributed under the terms of the Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/). See http://ivyspring.com/terms for full terms and conditions.</div> <!-- Popup image -->
+    <div id="popupFig" class="popupFig cursor-zoom-out">
+        <div id="popupFig-wrap" class="popupFig-wrap">
+            <img id="popupFigImage" src="" class="clickfig_max" alt="Popup Image" onclick="closePopupFig()">
+        </div>
+	</div>
+
+<!-- ContentIvyspringEnd -->
+              </div>
+    			<div id="footer_text"><hr class="nice">
+    			<p>&copy;2026 <a href="https://ivyspring.com" >Ivyspring International Publisher</a>. <a href="/ms/terms">Terms of use</a></p></div>
+   		  </div>
+          </div>
+       </div>
+	   
+
+</body></html>
