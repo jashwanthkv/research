@@ -41,11 +41,11 @@ export default function App() {
     }
   };
 
-  const handleSubmit = async (query, yearFrom, yearTo) => {
+  const handleSubmit = async (query) => {
     setLoading(true);
     setProgress(null);
 
-    const res = await startTask(query, sessionId, yearFrom, yearTo);
+    const res = await startTask(query, sessionId);
     setTaskId(res.data.task_id);
 
     if (res.data?.session_id) {
@@ -87,7 +87,7 @@ export default function App() {
   return (
     <div className="app-container">
       <div className="app-header">
-        <h1>🔬 Research Assistant</h1>
+        <h1>Research Assistant</h1>
         <div style={{ display: "flex", alignItems: "center", gap: "0.8rem" }}>
 
           {sessionId && (

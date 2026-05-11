@@ -6,7 +6,7 @@ from tavily import TavilyClient
 MAX_CHUNKS        = 10
 MAX_CONTEXT_CHARS = 5000
 
-tavily_search = TavilyClient(api_key="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")
+tavily_search = TavilyClient(api_key="")
 
 SYSTEM_PROMPT = """You are a research paper explainer helping a user understand content from analyzed papers.
 
@@ -95,18 +95,21 @@ def format_tavily_results(response: Dict[str, Any]) -> str:
 
 
 def continuous_explanation(state: Dict[str, Any]) -> Dict[str, Any]:
-    print("--- CONTINUATION EXPLAIN AGENT ---")
+    print("\n" + "="*70)
+    print("CONTINUOUS EXPLANATION AGENT RUNNING")
+    print("="*70)
 
     user_query = state["userQuery"]
     paper_ids  = state.get("active_paper_ids", [])
 
-    print(f"[Continuation] query='{user_query[:60]}' | paper_ids={paper_ids}")
+    print(f" Query: '{user_query[:60]}'")
+    print(f" Papers: {paper_ids}")
 
     # ── 1. Retrieve paper chunks from Chroma ──────────
     chunks  = get_chunks_for_papers(paper_ids, user_query)
     context = "\n\n---\n\n".join(chunks)[:MAX_CONTEXT_CHARS]
 
-    print(f"[Continuation] Retrieved {len(chunks)} chunks, {len(context)} chars")
+    print(f"Retrieved {len(chunks)} chunks from papers")
 
     # ── 2. Primary answer from paper context ──────────
     answer = ""
@@ -116,11 +119,11 @@ def continuous_explanation(state: Dict[str, Any]) -> Dict[str, Any]:
             {"role": "user",   "content": f"Context from papers:\n{context}\n\nQuestion:\n{user_query}"}
         ])
         answer = response.content.strip()
-        print(f"[Continuation] Primary answer length: {len(answer)}")
+        print(f"Generated answer from paper context ({len(answer)} chars)")
 
     # ── 3. Tavily fallback if context insufficient ─────
     if not context.strip() or is_insufficient(answer):
-        print("[Continuation] Insufficient context → using Tavily web search")
+        print("Insufficient paper context → using web search")
 
         try:
             raw_external = tavily_search.search(user_query, max_results=4)
@@ -131,10 +134,11 @@ def continuous_explanation(state: Dict[str, Any]) -> Dict[str, Any]:
                 {"role": "user",   "content": f"External information:\n{external}\n\nQuestion:\n{user_query}"}
             ])
             answer = response.content.strip()
-            print(f"[Continuation] Tavily answer length: {len(answer)}")
+            print(f"Generated answer from web search ({len(answer)} chars)")
 
         except Exception as e:
-            print(f"[Continuation] Tavily failed: {e}")
+            print(f"Web search failed: {e}")
             answer = "Sorry, I could not find enough information to answer your question."
 
+    print("="*70 + "\n")
     return {"explanation": answer}

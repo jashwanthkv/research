@@ -21,7 +21,7 @@ def init_paper_index():
         name=COLLECTION_NAME,
         metadata={"hnsw:space": "cosine"}
     )
-    print("✅ Paper-index Chroma initialized")
+    print("[OK] Paper-index Chroma initialized")
 
 
 def add_paper_to_index(

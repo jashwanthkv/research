@@ -1,3 +1,6 @@
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+
 export default function ResultView({ results = [], loading = false }) {
   const formatContent = (content) => {
     if (!content) return "";
@@ -7,7 +10,7 @@ export default function ResultView({ results = [], loading = false }) {
         : typeof content === "object"
         ? JSON.stringify(content, null, 2)
         : String(content);
-    return text.replace(/\*\*/g, "").replace(/\*/g, "").trim();
+    return text.trim();
   };
 
   // Empty state
@@ -15,11 +18,11 @@ export default function ResultView({ results = [], loading = false }) {
     return (
       <div className="result-container">
         <div className="result-header">
-          <h3 className="result-title">🎯 Research Results</h3>
+          <h3 className="result-title"> Research Results</h3>
         </div>
         <div className="result-body result-body--empty">
           <div className="explanation-section">
-            <h4 className="explanation-title">📝 Detailed Explanation</h4>
+            <h4 className="explanation-title"> Detailed Explanation</h4>
             <div className="explanation-text placeholder">
               Results and explanations will appear here after you submit a query.
             </div>
@@ -32,7 +35,7 @@ export default function ResultView({ results = [], loading = false }) {
   return (
     <div className="result-container">
       <div className="result-header">
-        <h3 className="result-title">🎯 Research Results</h3>
+        <h3 className="result-title"> Research Results</h3>
         {results.length > 0 && (
           <span style={{
             fontSize: "0.72rem",
@@ -67,7 +70,7 @@ export default function ResultView({ results = [], loading = false }) {
               {/* Papers list */}
               {papers.length > 0 && (
                 <div className="papers-section">
-                  <h4 className="papers-title">📚 Reference Papers</h4>
+                  <h4 className="papers-title"> Reference Papers</h4>
                   <ul className="papers-list">
                     {papers.map((p, idx) => (
                       <li key={idx} className="paper-item">
@@ -89,14 +92,16 @@ export default function ResultView({ results = [], loading = false }) {
               {/* Explanation */}
               {explanation ? (
                 <div className="explanation-section">
-                  <h4 className="explanation-title">📝 Detailed Explanation</h4>
-                  <div className="explanation-text">
-                    {formatContent(explanation)}
+                  <h4 className="explanation-title"> Detailed Explanation</h4>
+                  <div className="explanation-text markdown-body">
+                    <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                      {formatContent(explanation)}
+                    </ReactMarkdown>
                   </div>
                 </div>
               ) : (
                 <div className="explanation-section">
-                  <h4 className="explanation-title">📝 Detailed Explanation</h4>
+                  <h4 className="explanation-title"> Detailed Explanation</h4>
                   <div className="explanation-text placeholder">
                     No explanation returned for this query.
                   </div>
@@ -107,7 +112,7 @@ export default function ResultView({ results = [], loading = false }) {
               {error && (
                 <div className="explanation-section">
                   <h4 className="explanation-title" style={{ color: "var(--error)" }}>
-                    ⚠️ Error
+                    Error
                   </h4>
                   <div
                     className="explanation-text"
@@ -128,7 +133,7 @@ export default function ResultView({ results = [], loading = false }) {
               <span className="entry-label">Query #{results.length + 1}</span>
             </div>
             <div className="explanation-section">
-              <h4 className="explanation-title">📝 Detailed Explanation</h4>
+              <h4 className="explanation-title">Detailed Explanation</h4>
               <div className="explanation-text placeholder loading-pulse">
                 Researching… please wait.
               </div>

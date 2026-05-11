@@ -212,6 +212,29 @@ body::before {
   box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.12);
 }
 
+/* Year inputs alignment helpers */
+.years-row {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+.year-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.year-field label {
+  /* ensure both labels occupy same vertical space for perfect alignment */
+  min-height: 1.1rem;
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+}
+.year-field input {
+  width: 100%;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
 .submit-btn {
   padding: 0.9rem 1.5rem;
   background: linear-gradient(135deg, var(--accent) 0%, #6d28d9 100%);
@@ -326,6 +349,46 @@ body::before {
 .progress-state.running { background: rgba(139, 92, 246, 0.15); color: var(--accent); }
 .progress-state.done    { background: rgba(16, 185, 129, 0.12); color: var(--success); }
 
+/* Progress bar under each progress item */
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: rgba(255,255,255,0.02);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-top: 0.5rem;
+}
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  border-radius: 6px;
+  transition: width 0.3s linear;
+}
+.progress-fill.running {
+  background: linear-gradient(90deg, rgba(16,185,129,0.95), rgba(56,189,248,0.9));
+  animation: growLoop 3s linear infinite;
+}
+.progress-fill.pending {
+  background: rgba(255,255,255,0.06);
+  animation: pulseSlow 2.5s ease-in-out infinite;
+}
+.progress-fill.done {
+  background: rgba(16,185,129,0.9);
+  width: 100% !important;
+}
+
+@keyframes growLoop {
+  0% { width: 5%; }
+  50% { width: 85%; }
+  100% { width: 5%; }
+}
+
+@keyframes pulseSlow {
+  0% { width: 10%; opacity: 0.6 }
+  50% { width: 40%; opacity: 0.9 }
+  100% { width: 10%; opacity: 0.6 }
+}
+
 @keyframes pulse {
   0%, 100% { box-shadow: 0 0 0 0 rgba(139, 92, 246, 0.6); }
   50%       { box-shadow: 0 0 0 5px rgba(139, 92, 246, 0); }
@@ -439,9 +502,7 @@ body::before {
 
 .explanation-text {
   color: var(--text);                /* ← FIXED: always visible */
-  line-height: 1.85;
-  white-space: pre-wrap;
-  word-wrap: break-word;
+  line-height: 1.6;
   background: var(--surface2);
   padding: 1.4rem 1.6rem;
   border-radius: var(--radius);
@@ -560,4 +621,87 @@ body::before {
 @keyframes loadingPulse {
   0%, 100% { opacity: 0.5; }
   50%       { opacity: 1; }
+}
+
+/* ── Markdown Styles ── */
+.markdown-body {
+  color: var(--text);
+  font-family: 'Sora', sans-serif;
+  line-height: 1.6;
+}
+
+.markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4, .markdown-body h5, .markdown-body h6 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: -0.01em;
+}
+
+.markdown-body h1:first-child, .markdown-body h2:first-child, .markdown-body h3:first-child {
+  margin-top: 0;
+}
+
+.markdown-body h1 { font-size: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 0.3em; }
+.markdown-body h2 { font-size: 1.3rem; border-bottom: 1px solid var(--border); padding-bottom: 0.3em; }
+.markdown-body h3 { font-size: 1.1rem; }
+.markdown-body h4 { font-size: 1rem; }
+
+.markdown-body p {
+  margin-bottom: 1em;
+}
+
+.markdown-body p:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body ul, .markdown-body ol {
+  margin-bottom: 1em;
+  padding-left: 1.5em;
+}
+
+.markdown-body li {
+  margin-bottom: 0.3em;
+}
+
+.markdown-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5em;
+  margin-top: 1em;
+  font-size: 0.9rem;
+}
+
+.markdown-body th, .markdown-body td {
+  border: 1px solid var(--border);
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+.markdown-body th {
+  background: var(--surface3);
+  font-weight: 600;
+  color: var(--text);
+}
+
+.markdown-body tbody tr:nth-child(even) {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.markdown-body tbody tr:hover {
+  background: rgba(139, 92, 246, 0.05);
+}
+
+.markdown-body a {
+  color: var(--accent2);
+  text-decoration: none;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+  color: var(--accent);
+}
+
+html.light-mode .markdown-body tbody tr:nth-child(even) {
+  background: rgba(0, 0, 0, 0.03);
 }

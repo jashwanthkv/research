@@ -65,7 +65,7 @@ def run_task(task_id: str, query: str, session_id: str | None = None, year_from:
     try:
         if not session_id:
             session_id = str(uuid.uuid4())
-            print(f"⚠️  No session_id from frontend → new: {session_id}")
+            print(f"  No session_id from frontend → new: {session_id}")
         else:
             print(f"🔑 Session: {session_id}")
 
@@ -76,6 +76,7 @@ def run_task(task_id: str, query: str, session_id: str | None = None, year_from:
             reset_chroma()
 
             state = {
+                "task_id":             task_id,
                 "userQuery":           query,
                 "goal":                "research the latest papers on the topic and provide an analysis",
                 "active_paper_ids":    [],
@@ -98,6 +99,7 @@ def run_task(task_id: str, query: str, session_id: str | None = None, year_from:
                   f"analysis_done={state.get('analysis_done')} | "
                   f"papers={state.get('active_paper_ids', [])}")
 
+            state["task_id"]           = task_id
             state["userQuery"]         = query
             state["analysis_done"]     = state.get("analysis_done", False)
             state["has_active_papers"] = state.get("has_active_papers", False)

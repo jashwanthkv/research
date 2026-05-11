@@ -41,6 +41,7 @@ def get_task_status(task_id):
         "task_id":  task["task_id"],
         "status":   task["status"],
         "progress": task["progress"],
+        "logs":     task.get("logs", []),
     })
 
 

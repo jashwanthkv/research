@@ -1,0 +1,516 @@
+================================================================================
+          RESEARCH ASSISTANT — COMPLETE DATA FLOW EXPLANATION
+================================================================================
+
+This document explains exactly how the databases (SQLite, Chroma) are used,
+what chunks are, what metadata is, and the full journey data takes when a
+user submits a prompt.
+
+
+================================================================================
+  1. THE THREE DATA STORES — WHAT THEY HOLD AND WHY
+================================================================================
+
+Your system has THREE separate data stores. Each serves a different purpose:
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│  STORE #1:  SQLite  (db/knowledge.db)                                     │
+│  ─────────────────────────────────────                                     │
+│                                                                           │
+│  TWO TABLES:                                                              │
+│                                                                           │
+│  TABLE: papers                                                            │
+│    - paper_id       (PRIMARY KEY)                                         │
+│    - title                                                                │
+│    - abstract                                                             │
+│    - published_date                                                       │
+│    - url                                                                  │
+│    - methodology    (extracted section from PDF)                          │
+│    - results        (extracted section from PDF)                          │
+│    - full_text      (raw text from PDF, up to 20k chars)                  │
+│    - title_vector   (BLOB — embedding of the title)                       │
+│    - abstract_vector(BLOB — embedding of the abstract)                    │
+│    - stored_at      (timestamp)                                           │
+│                                                                           │
+│  TABLE: paper_chunks                                                      │
+│    - chunk_id       (PRIMARY KEY, format: "paperId_chunkIndex")           │
+│    - paper_id       (FOREIGN KEY → papers.paper_id)                       │
+│    - chunk_index    (integer, preserves reading order)                     │
+│    - section        (e.g. "methodology", can be null)                     │
+│    - content        (the actual chunk text, ~300 words each)              │
+│                                                                           │
+│  PURPOSE:                                                                 │
+│    - Permanent storage of paper data + chunks                             │
+│    - The analyser reads chunks FROM HERE (not from Chroma)                │
+│    - The DB agent does similarity search using the stored vectors         │
+│    - Metadata (title, year, url) is fetched from here as a fallback      │
+│                                                                           │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│  STORE #2:  Chroma — "paper_chunks" collection  (chroma_store.py)         │
+│  ────────────────────────────────────────────────────────────────          │
+│                                                                           │
+│  WHAT IT STORES:                                                          │
+│    - Chunk embeddings (vector representation of each chunk)               │
+│    - Chunk text (the document content)                                    │
+│    - Metadata per chunk: { "paper_id": "..." }                            │
+│                                                                           │
+│  PURPOSE:                                                                 │
+│    - Used ONLY by the continuous_explanation agent                         │
+│    - When user asks a follow-up question, this collection does a          │
+│      semantic vector search to find the most relevant chunks from         │
+│      the already-analyzed papers                                          │
+│    - It is IN-MEMORY and gets RESET on every new session                  │
+│    - NOT used by the analyse agent at all                                 │
+│                                                                           │
+│  HOW IT WORKS:                                                            │
+│    - User asks: "what methodology did paper 2 use?"                       │
+│    - The query is embedded → cosine similarity against chunk vectors      │
+│    - Top ~10 most relevant chunks are returned                            │
+│    - These chunks become the "context" for the LLM to answer              │
+│                                                                           │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│  STORE #3:  Chroma — "paper_index" collection  (paper_index_store.py)     │
+│  ────────────────────────────────────────────────────────────────          │
+│                                                                           │
+│  WHAT IT STORES:                                                          │
+│    - One entry per paper (NOT per chunk)                                  │
+│    - Embedding of "title + abstract" combined                             │
+│    - Metadata: { paper_id, title, url, year, stored_at }                  │
+│                                                                           │
+│  PURPOSE:                                                                 │
+│    1. METADATA LOOKUP — the analyse agent calls get_paper_from_index()    │
+│       to quickly grab title/year/url for a paper_id WITHOUT hitting SQL   │
+│    2. DECISION SUPPORT — the decision tools call query_paper_index()      │
+│       to check what papers are already stored and how fresh they are      │
+│    3. It acts as a lightweight "catalog" of all stored papers             │
+│                                                                           │
+│  IN SHORT:                                                                │
+│    paper_index = quick metadata + "do we already have papers on this?"    │
+│    paper_chunks (Chroma) = semantic search over actual paper content      │
+│                                                                           │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+
+================================================================================
+  2. WHAT ARE CHUNKS?
+================================================================================
+
+When a PDF is downloaded and parsed, the full text is split into overlapping
+pieces called "chunks."
+
+  Full text (say 6000 words)
+  ──────────────────────────────────────────────────────────
+  │ Chunk 0: words 0-299   │
+  │            Chunk 1: words 250-549   │       ← 50-word overlap
+  │                          Chunk 2: words 500-799   │
+  ...
+
+  chunk_size = 300 words
+  overlap    = 50 words
+
+WHY CHUNKS?
+  - LLMs have token limits — you can't feed 6000 words at once
+  - Chunks let the analyser process piece by piece
+  - Overlap ensures no information is lost at boundaries
+  - For vector search (continuous agent), smaller chunks give
+    more precise semantic matches
+
+WHERE ARE CHUNKS STORED?
+  - SQLite paper_chunks table  → used by the analyse agent
+  - Chroma paper_chunks collection → used by continuous_explanation agent
+  - BOTH get the same chunks, stored simultaneously during fetch
+
+
+================================================================================
+  3. WHY STORE METADATA SEPARATELY?
+================================================================================
+
+You asked: "why store the metadata?"
+
+The metadata (title, year, url) is stored in TWO places:
+  1. SQLite papers table — has everything (full_text, vectors, metadata)
+  2. Chroma paper_index — has ONLY metadata + a combined embedding
+
+WHY the duplication? Different agents need metadata at different speeds:
+
+  ┌──────────────────────────────────────────────────────────────────────┐
+  │  ANALYSE AGENT needs metadata:                                     │
+  │                                                                    │
+  │  When processing paper "paper_abc123", it needs title/year/url     │
+  │  to insert into the final analysis JSON.                           │
+  │                                                                    │
+  │  It first tries:  Chroma paper_index  (fast, in-memory)            │
+  │  If that fails:   SQLite papers table  (disk, always available)    │
+  │                                                                    │
+  │  See analyse.py → get_paper_metadata() — it has BOTH fallbacks    │
+  └──────────────────────────────────────────────────────────────────────┘
+
+  ┌──────────────────────────────────────────────────────────────────────┐
+  │  DECISION AGENT needs metadata:                                    │
+  │                                                                    │
+  │  Before deciding whether to fetch new papers, it checks:           │
+  │  "Do we already have papers on this topic? How recent are they?"   │
+  │                                                                    │
+  │  It calls: query_paper_index(query) → returns years + count        │
+  │  This is a vector search on the paper_index collection             │
+  └──────────────────────────────────────────────────────────────────────┘
+
+So metadata exists in multiple places because different agents access it
+in different ways (by ID vs. by semantic similarity).
+
+
+================================================================================
+  4. IS VECTOR DATA USED IN ANALYSIS? (OTHER THAN CONTINUOUS AGENT)
+================================================================================
+
+SHORT ANSWER: YES, but indirectly.
+
+Here's exactly where vector data is used across the whole system:
+
+  ┌──────────────────────────────────────────────────────────────────────┐
+  │  VECTOR USAGE MAP                                                  │
+  │                                                                    │
+  │  1. SQLite abstract_vector / title_vector (in papers table)        │
+  │     └─ Used by: DB AGENT (db.py)                                   │
+  │     └─ How: search_db_similarity() computes cosine similarity      │
+  │             between user query embedding and stored abstract        │
+  │             vectors to find relevant paper_ids                      │
+  │     └─ When: Decision agent routes to "retrieve" to check if       │
+  │              DB already has matching papers                         │
+  │                                                                    │
+  │  2. Chroma "paper_chunks" collection                               │
+  │     └─ Used by: CONTINUOUS EXPLANATION AGENT                       │
+  │     └─ How: Semantic search over chunk embeddings to find the      │
+  │             most relevant chunks for a follow-up question           │
+  │     └─ When: User asks a continuation/follow-up question           │
+  │                                                                    │
+  │  3. Chroma "paper_index" collection                                │
+  │     └─ Used by: ANALYSE AGENT (metadata lookup)                    │
+  │     └─ Used by: DECISION TOOLS (freshness check)                   │
+  │     └─ How: get_paper_from_index(paper_id) — direct ID lookup      │
+  │             query_paper_index(query) — semantic search for years    │
+  │                                                                    │
+  │  4. Chroma "paper_chunks" → resolve_papers()                       │
+  │     └─ Used by: RESOLVE TOOL (tools.py)                            │
+  │     └─ How: Finds which paper_ids are most relevant to a query     │
+  │             by searching chunk vectors, then counting hits per      │
+  │             paper_id                                                │
+  │                                                                    │
+  └──────────────────────────────────────────────────────────────────────┘
+
+  THE ANALYSE AGENT (analyse.py) itself does NOT do vector search.
+  It receives paper_ids from the state, fetches chunks from SQLite by
+  paper_id, and sends those chunks to the LLM. No embeddings involved
+  in the actual analysis step.
+
+  BUT the vectors are critical to GET TO the analysis — without them,
+  the system can't know WHICH papers to analyse.
+
+
+================================================================================
+  5. THE COMPLETE FLOW WHEN A PROMPT IS GIVEN
+================================================================================
+
+Let's trace what happens step by step when a user sends:
+  "find 3 papers on transformer architecture"
+
+
+─── STEP 0: API RECEIVES THE REQUEST ──────────────────────────────────────
+
+  POST /api/task  →  { "query": "find 3 papers on transformer architecture",
+                       "session_id": "abc-123" }
+
+  → routes.py creates a task_id
+  → Spawns a background thread calling run_task()
+
+
+─── STEP 1: SESSION STATE IS LOADED ───────────────────────────────────────
+
+  agent_runner.py → run_task()
+
+  - Checks if session_id "abc-123" has existing state
+    (first in _SESSION_STORE dict, then Redis)
+  - If NEW session:
+      → Resets Chroma (clears paper_chunks collection)
+      → Creates fresh state dict with all fields zeroed out
+  - If EXISTING session:
+      → Loads previous state (keeps active_paper_ids, analysis, etc.)
+      → Updates userQuery with the new prompt
+
+  STATE at this point:
+  {
+    userQuery: "find 3 papers on transformer architecture",
+    active_paper_ids: [],
+    has_active_papers: false,
+    analysis_done: false,
+    next_step: "retrieve",
+    ...
+  }
+
+
+─── STEP 2: GRAPH STARTS → DECISION AGENT ────────────────────────────────
+
+  graph.py: START → decision node
+
+  decision.py receives the state and:
+  1. Sends user query + context to LLM
+  2. LLM classifies intent as "new_fetch" (because "find 3 papers...")
+  3. Extracts paper_count = 3
+
+  RETURNS:
+  {
+    next_step: "fetch",
+    fetch_query: "find 3 papers on transformer architecture",
+    max_results: 3,
+    answer_mode: "analysis",
+    current_topic: "find 3 papers on transformer architecture",
+    has_active_papers: false,
+    analysis_done: false,
+    active_paper_ids: []
+  }
+
+
+─── STEP 3: CONDITIONAL EDGE → FETCH AGENT ───────────────────────────────
+
+  Because next_step = "fetch", the graph routes to the fetch node.
+
+  fetch.py does a LOT of work:
+
+  1. QUERY REWRITE
+     → Sends query to LLM to get optimized search terms
+     → e.g. "transformer self-attention architecture deep learning"
+
+  2. SEMANTIC SCHOLAR SEARCH
+     → Calls Semantic Scholar API with the optimized query
+     → Gets ~20 candidate papers per round
+
+  3. FOR EACH CANDIDATE PAPER:
+     a. Score relevance (LLM scores 0-100)
+     b. Skip if score < 54
+     c. Try to find open-access PDF (arXiv, Unpaywall, MDPI, S2 API)
+     d. Download PDF if found
+     e. Parse PDF with PyMuPDF → extract full_text
+     f. If no PDF → fall back to abstract/snippet
+
+  4. STORE PAPER DATA (this is where ALL databases get populated):
+
+     store_paper_data(pid, title, abstract, paper, full_text, pdf_url):
+
+     ┌─────────────────────────────────────────────────────────────────┐
+     │                                                                │
+     │  a) store_paper()  →  SQLite "papers" table                   │
+     │     - Embeds title → title_vector (BLOB)                      │
+     │     - Embeds abstract → abstract_vector (BLOB)                │
+     │     - Stores: paper_id, title, abstract, date, url,           │
+     │       methodology, results, full_text, vectors                │
+     │                                                                │
+     │  b) Split full_text into chunks (300 words, 50 overlap)       │
+     │     insert_paper_chunks()  →  SQLite "paper_chunks" table     │
+     │     - Each chunk gets: chunk_id, paper_id, chunk_index,       │
+     │       section, content                                        │
+     │                                                                │
+     │  c) add_paper_chunks()  →  Chroma "paper_chunks" collection   │
+     │     - Same chunks but as VECTOR EMBEDDINGS                    │
+     │     - Each chunk embedded and stored with paper_id metadata   │
+     │                                                                │
+     │  d) add_paper_to_index()  →  Chroma "paper_index" collection  │
+     │     - ONE entry per paper (not per chunk)                     │
+     │     - Embedding of "title + abstract"                         │
+     │     - Metadata: paper_id, title, url, year                   │
+     │                                                                │
+     └─────────────────────────────────────────────────────────────────┘
+
+  5. RETURNS:
+     {
+       stored_count: 3,
+       has_active_papers: true,
+       active_paper_ids: ["pid_1", "pid_2", "pid_3"],
+       current_topic: "find 3 papers on transformer architecture"
+     }
+
+
+─── STEP 4: CONDITIONAL EDGE → ANALYSE AGENT ─────────────────────────────
+
+  Because answer_mode = "analysis", the graph routes fetch → analyse.
+
+  analyse.py processes EACH paper_id:
+
+  FOR paper_id "pid_1":
+
+    1. GET METADATA
+       → get_paper_metadata(paper_id)
+       → First tries: Chroma paper_index (get_paper_from_index)
+       → Fallback: SQLite papers table
+       → Gets: { title, year, url }
+
+    2. GET CHUNKS FROM SQLITE (NOT from Chroma!)
+       → get_paper_chunks_by_paper_id(paper_id)
+       → Queries: SELECT chunk_index, section, content
+                  FROM paper_chunks WHERE paper_id = ?
+       → Returns ordered list of chunk dicts
+
+    3. CHECK CONTENT QUALITY
+       → Count total words across all chunks
+       → If < 50 words → return skeleton (minimal analysis)
+
+    4. CHUNK-BY-CHUNK EXTRACTION (using LLM)
+       → For each chunk, send to llm_extract with CHUNK_EXTRACT_PROMPT
+       → LLM extracts: definitions, method_steps, results, limitations
+       → All extractions are merged into a single "paper_memory" object
+
+    5. SYNTHESIS (using LLM)
+       → Send { metadata, extracted_memory } to llm_synth
+       → LLM produces: summary, methodology, key_contributions, drawbacks
+       → If extraction was sparse → fallback: send raw chunk text directly
+
+    6. FORCE METADATA
+       → Ensure title/year/url from metadata are in the final output
+       → (LLM sometimes forgets to copy them)
+
+  AFTER ALL PAPERS:
+
+    7. OVERALL TRENDS (using LLM)
+       → Send all paper analyses to llm_trends
+       → LLM extracts: themes, methods, drawbacks, evolution
+
+  RETURNS:
+  {
+    analysis: {
+      paper_analyses: [ { title, year, link, summary, methodology, ... }, ... ],
+      overall_trends: { themes, methods, drawbacks, evolution }
+    },
+    analysis_done: true,
+    has_active_papers: true
+  }
+
+
+─── STEP 5: EDGE → EXPLAIN AGENT ─────────────────────────────────────────
+
+  graph.py: analyse → explain
+
+  explain.py:
+  1. Takes the analysis JSON from state
+  2. Sends paper_analyses + overall_trends to LLM
+  3. LLM writes a human-readable explanation with sections:
+     - Title, Year, Link, Main Idea, Methodology, Key Contribution, Drawbacks
+     - Plus an Overall Summary
+
+  RETURNS:
+  {
+    explanation: "## Paper 1: Attention Is All You Need\n\n..."
+  }
+
+
+─── STEP 6: EDGE → END ───────────────────────────────────────────────────
+
+  graph.py: explain → END
+
+  agent_runner.py:
+  1. Saves final state to session (in-process dict + Redis)
+  2. Marks task as completed
+  3. Stores result: { analysis, explanation, session_id }
+
+
+─── STEP 7: FRONTEND POLLS FOR RESULT ────────────────────────────────────
+
+  GET /api/task/<task_id>/result
+
+  Returns:
+  {
+    task_id: "...",
+    mode: "analysis",
+    papers: [...],
+    result: {
+      analysis: { paper_analyses: [...], overall_trends: {...} },
+      explanation: "...",
+      session_id: "abc-123"
+    }
+  }
+
+
+================================================================================
+  6. WHAT HAPPENS ON A FOLLOW-UP QUESTION?
+================================================================================
+
+User sends: "what methodology did paper 2 use?"
+
+  1. DECISION AGENT → classifies as "continuation"
+     (because has_active_papers = true, and it's a follow-up)
+
+  2. Routes to → CONTINUOUS EXPLANATION AGENT
+
+  3. continuous_explanation.py:
+
+     a) Gets active_paper_ids from state (e.g. ["pid_1", "pid_2", "pid_3"])
+
+     b) VECTOR SEARCH on Chroma "paper_chunks" collection:
+        → Embeds the query "what methodology did paper 2 use?"
+        → Searches chunks WHERE paper_id IN active_paper_ids
+        → Returns top 10 most semantically similar chunks
+        → THIS IS WHERE CHROMA VECTOR DATA IS USED
+
+     c) Sends chunks as context + user question to LLM
+
+     d) If chunks are insufficient → falls back to Tavily web search
+
+     e) Returns { explanation: "..." }
+
+
+================================================================================
+  7. SUMMARY: WHICH DB IS USED WHERE
+================================================================================
+
+  ┌──────────────────────┬───────────────────────────────────────────────┐
+  │  AGENT               │  DATABASES USED                              │
+  ├──────────────────────┼───────────────────────────────────────────────┤
+  │  Decision            │  None directly (state only)                  │
+  │                      │  (decision tools use paper_index for         │
+  │                      │   freshness checks)                          │
+  ├──────────────────────┼───────────────────────────────────────────────┤
+  │  DB (Retrieve)       │  SQLite → abstract_vector similarity search  │
+  │                      │  SQLite → get_paper_details by paper_ids     │
+  ├──────────────────────┼───────────────────────────────────────────────┤
+  │  Fetch               │  SQLite → store_paper (papers table)         │
+  │                      │  SQLite → insert_paper_chunks (chunks table) │
+  │                      │  Chroma → add_paper_chunks (chunk vectors)   │
+  │                      │  Chroma → add_paper_to_index (paper catalog) │
+  ├──────────────────────┼───────────────────────────────────────────────┤
+  │  Analyse             │  Chroma paper_index → metadata lookup        │
+  │                      │  SQLite papers → metadata fallback           │
+  │                      │  SQLite paper_chunks → fetch chunks by ID    │
+  │                      │  (NO vector search — just plain SQL queries) │
+  ├──────────────────────┼───────────────────────────────────────────────┤
+  │  Explain             │  None (works from analysis in state)         │
+  ├──────────────────────┼───────────────────────────────────────────────┤
+  │  Continuous          │  Chroma paper_chunks → VECTOR SEARCH         │
+  │  Explanation         │  (semantic search over chunk embeddings)      │
+  │                      │  Tavily → web search fallback                │
+  └──────────────────────┴───────────────────────────────────────────────┘
+
+
+================================================================================
+  8. KEY INSIGHT: WHY BOTH SQL AND VECTOR STORES?
+================================================================================
+
+  SQLite = STRUCTURED storage (query by exact paper_id, fetch all chunks
+           in order, store full text, store raw vectors as BLOBs)
+
+  Chroma = SEMANTIC search (find chunks/papers by MEANING, not by exact ID)
+
+  You need BOTH because:
+  - Analysis needs chunks in ORDER (chunk_index 0, 1, 2...) → SQL
+  - Follow-up questions need chunks by RELEVANCE → Chroma vector search
+  - The DB agent needs to find papers similar to a query → SQL vectors
+  - The system needs to know "do we have papers on X?" → Chroma paper_index
+
+  The vectors in SQLite (title_vector, abstract_vector BLOBs) serve a
+  DIFFERENT purpose than Chroma vectors:
+  - SQLite vectors: used by DB agent for paper-level similarity
+  - Chroma vectors: used for chunk-level semantic search (continuation)
+                     and paper-level catalog search (paper_index)
+
+================================================================================

@@ -1,6 +1,7 @@
 import json
 import re
 from config import llm
+from services.task_manager import add_task_log
 
 DEFAULT_PAPER_COUNT = 1
 MAX_PAPER_COUNT     = 10
@@ -14,27 +15,26 @@ You will receive:
 Classify into ONE of these intents:
 
 ════════════════════════════════════════
-"new_fetch"
+"new_topic"
 ════════════════════════════════════════
-User EXPLICITLY wants NEW papers fetched.
-The key signal is: user is asking to FIND, GET, FETCH, SHOW, or RESEARCH papers.
+User wants to explore a new research topic, find papers, or research a subject.
+Even if they just provide a topic name (e.g. "LSTM" or "climate change"), assume they want papers on it unless they specifically ask a "what is/how does" question.
 
-Examples → new_fetch:
+Examples → new_topic:
   "find 3 papers on black holes"
-  "get me papers about climate change"
+  "LSTM"
+  "Recent advances in machine learning for NLP"
   "research transformer architecture"
   "show papers on YOLO"
   "fetch articles on deep learning"
-  "explain 4 papers on social media"
-  "i want papers on quantum computing"
   "give me research on LSTM"
   "search for papers on attention mechanism"
-  "papers on reinforcement learning"
+  "climate change impacts"
 
 ════════════════════════════════════════
 "continuation"
 ════════════════════════════════════════
-User is asking a follow-up or doubt about the ALREADY analyzed papers/topic.
+User is asking a follow-up about the ALREADY analyzed papers/topic.
 No new papers needed — answer from existing knowledge.
 
 Examples → continuation:
@@ -49,18 +49,12 @@ Examples → continuation:
 ════════════════════════════════════════
 "general_question"
 ════════════════════════════════════════
-User asks a general concept/knowledge question.
-NOT asking for papers. Just wants an explanation of something.
+User asks a specific factual or conceptual question NOT requiring paper retrieval.
 
 Examples → general_question:
   "how does GPU work?"
   "what is backpropagation?"
-  "explain the transformer architecture"
-  "what is YOLO?"
-  "how does LSTM differ from RNN?"
-  "what is gradient descent?"
-  "explain attention mechanism"
-  "what is overfitting?"
+  "what is the transformer architecture?"
 
 ════════════════════════════════════════
 "end"
@@ -69,14 +63,14 @@ Examples → general_question:
 
 ════════════════════════════════════════
 DECISION RULE:
-- If user says "papers on X" / "research on X" / "find/get/fetch/show papers" → new_fetch
+- If user provides a topic phrase or asks for papers → new_topic
 - If user asks about something already discussed → continuation  
-- If user asks what/how/why about a concept (no paper request) → general_question
+- If user asks a specific concept question (what/how/why) → general_question
 - When in doubt between continuation and general_question → pick general_question
 
 Return ONLY valid JSON:
 {
-  "intent": "new_fetch" | "continuation" | "general_question" | "end",
+  "intent": "new_topic" | "continuation" | "general_question" | "end",
   "paper_count": <integer or null>,
   "reason": "<one short sentence explaining your choice>"
 }
@@ -84,7 +78,9 @@ Return ONLY valid JSON:
 
 
 def decision(state):
-    print("---DECISION AGENT---")
+    print("\n" + "="*70, flush=True)
+    print("DECISION AGENT RUNNING", flush=True)
+    print("="*70, flush=True)
 
     user_query          = state.get("userQuery", "")
     has_active_papers   = state.get("has_active_papers", False)
@@ -125,38 +121,31 @@ def decision(state):
         llm_count  = parsed.get("paper_count")
         reason     = parsed.get("reason", "")
 
-        print(f"[Decision] intent={llm_intent} | reason={reason}")
-        print(f"[Decision] paper_count={llm_count}")
+        print(f"[Decision] ✓ LLM Decision: intent='{llm_intent}' | reason={reason}", flush=True)
+        print(f"[Decision] Requested papers: {llm_count}", flush=True)
 
     except Exception as e:
-        print(f"[Decision] LLM parse failed: {e}")
-        llm_intent = "continuation" if has_active_papers else "general_question"
+        print(f"[Decision] LLM parse failed: {e}", flush=True)
+        llm_intent = "continuation" if has_active_papers else "new_topic"
+        print(f"[Decision] ⚠ Fallback intent: {llm_intent}", flush=True)
 
     requested_count = llm_count if isinstance(llm_count, int) else DEFAULT_PAPER_COUNT
     requested_count = min(requested_count, MAX_PAPER_COUNT)
-    print(f"[Decision] Final paper count: {requested_count}")
+    print(f"[Decision] Final paper count: {requested_count}", flush=True)
+    
+    add_task_log(state.get("task_id"), f"[Decision] Intent: {llm_intent}, Requested Papers: {requested_count}")
 
 
     if llm_intent == "end":
+        print(f"\nDECISION MADE: END_CONVERSATION", flush=True)
+        print("="*70 + "\n", flush=True)
         return {"next_step": "end", "answer_mode": "analysis"}
 
 
-    if llm_intent == "new_fetch":
-        print("[Decision] New fetch → fetch agent")
-        return {
-            "next_step":         "fetch",
-            "fetch_query":       user_query,
-            "answer_mode":       "analysis",
-            "max_results":       requested_count,
-            "current_topic":     user_query,
-            "has_active_papers": False,
-            "analysis_done":     False,
-            "active_paper_ids":  [],
-        }
-
-
-    if llm_intent == "continuation" and has_active_papers and active_paper_ids:
-        print("[Decision] Continuation → continuous_explanation")
+    if llm_intent in ("continuation", "general_question"):
+        print(f"\nDECISION MADE: {llm_intent.upper()}", flush=True)
+        print(f"   → Answering from {len(active_paper_ids)} existing paper(s)", flush=True)
+        print("="*70 + "\n", flush=True)
         return {
             "next_step":        "continuous_explanation",
             "answer_mode":      "analysis",
@@ -164,34 +153,57 @@ def decision(state):
         }
 
 
-    if llm_intent in ("general_question", "continuation"):
-        print("[Decision] General/concept question → continuous_explanation (Tavily ready)")
-        return {
-            "next_step":        "continuous_explanation",
-            "answer_mode":      "analysis",
-            "active_paper_ids": active_paper_ids,
-        }
+    if llm_intent in ("new_topic", "new_fetch"):
+        if not retrieval_attempted:
+            print(f"\nDECISION MADE: RETRIEVE_FROM_DB", flush=True)
+            print(f"   → Fetching {requested_count} papers on: '{user_query}'", flush=True)
+            print("="*70 + "\n", flush=True)
+            return {
+                "next_step":   "retrieve",
+                "answer_mode": "analysis",
+                "max_results": requested_count,
+                "fetch_query": user_query,
+                "current_topic": user_query,
+            }
+            
+        if retrieval_attempted and not has_active_papers:
+            print(f"\nDECISION MADE: FETCH_FROM_WEB", flush=True)
+            print(f"   → DB empty, fetching {requested_count} papers from web", flush=True)
+            print("="*70 + "\n", flush=True)
+            return {
+                "next_step":         "fetch",
+                "fetch_query":       user_query,
+                "answer_mode":       "analysis",
+                "max_results":       requested_count,
+                "current_topic":     user_query,
+                "has_active_papers": False,
+                "analysis_done":     False,
+                "active_paper_ids":  [],
+            }
+            
+        if has_active_papers and not analysis_done:
+            print(f"\nDECISION MADE: ANALYZE_PAPERS", flush=True)
+            print(f"   → Analyzing {len(active_paper_ids)} fetched paper(s)", flush=True)
+            print("="*70 + "\n", flush=True)
+            return {
+                "next_step":         "analyse",
+                "answer_mode":       "analysis",
+                "active_paper_ids":  active_paper_ids,
+                "has_active_papers": True,
+                "max_results":       requested_count,
+            }
 
-    if retrieval_attempted and not has_active_papers:
-        print("[Decision] DB empty → forcing fetch")
-        return {
-            "next_step":     "fetch",
-            "fetch_query":   user_query,
-            "answer_mode":   "analysis",
-            "max_results":   requested_count,
-            "current_topic": user_query,
-        }
-
-    if has_active_papers and active_paper_ids and not analysis_done:
-        print("[Decision] Papers exist, not analysed → analyse")
-        return {
-            "next_step":         "analyse",
-            "answer_mode":       "analysis",
-            "active_paper_ids":  active_paper_ids,
-            "has_active_papers": True,
-            "max_results":       requested_count,
-        }
-
+    print("\nDECISION MADE: DEFAULT_RETRIEVE", flush=True)
+    print(f"   → Fetching {requested_count} papers", flush=True)
+    print("="*70 + "\n", flush=True)
+    return {
+        "next_step":   "retrieve",
+        "answer_mode": "analysis",
+        "max_results": requested_count,
+        "active_paper_ids":  active_paper_ids,
+        "has_active_papers": True,
+        "max_results":requested_count,
+    }
 
     print("[Decision] Default → retrieve")
     return {

@@ -22,6 +22,7 @@ def create_task(query: str):
                 for step in PIPELINE_STEPS
             ],
             "papers": [],
+            "logs": [],
             "result": None
         }
 
@@ -55,3 +56,10 @@ def complete_task(task_id: str, mode: str, papers=None, result=None):
 def get_task(task_id: str):
     with _LOCK:
         return _TASKS.get(task_id)
+
+def add_task_log(task_id: str, message: str):
+    with _LOCK:
+        task = _TASKS.get(task_id)
+        if task:
+            task.setdefault("logs", []).append(message)
+

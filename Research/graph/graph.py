@@ -15,6 +15,7 @@ from agents.continuous_explanation import continuous_explanation
 
 
 class State(TypedDict):
+    task_id:              str
     userQuery:            str
     goal:                 str
 
@@ -28,10 +29,13 @@ class State(TypedDict):
     has_active_papers:    bool
     analysis_done:        bool
 
+    year_from:            Optional[int]
+    year_to:              Optional[int]
+
     next_step:   Literal["retrieve", "fetch", "analyse", "continuous_explanation", "end"]
     answer_mode: Literal["reference", "analysis"]
 
-    analysis:    Any
+    analysis:    Any  # Contains paper_analyses + overall_trends (now with research-grade fields)
     explanation: str
 
 

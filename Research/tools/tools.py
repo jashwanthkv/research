@@ -57,7 +57,7 @@ def search_papers(
 
         paper_year = paper.published.year
         if current_year - paper_year > years_limit:
-            continue  # ❌ skip old papers
+            continue  #  skip old papers
 
         results.append({
             "paper_id": paper.entry_id.split("/")[-1],
@@ -120,7 +120,8 @@ def download_paper_pdf(
 
 def parse_paper(pdf_path: str):
     """
-    Extract text from PDF and return structured sections.
+    Extract text + tables from PDF and return structured sections.
+    Tables are extracted via PyMuPDF's find_tables() and returned as markdown.
     """
     if not pdf_path or not os.path.exists(pdf_path):
         return {}
@@ -128,9 +129,32 @@ def parse_paper(pdf_path: str):
     try:
         doc = fitz.open(pdf_path)
         full_text = ""
-        for page in doc:
+        tables_markdown = []
+
+        for page_num, page in enumerate(doc):
             full_text += page.get_text()
+
+            # ── Table extraction via PyMuPDF ──
+            try:
+                tabs = page.find_tables()
+                if tabs.tables:
+                    for i, table in enumerate(tabs.tables):
+                        try:
+                            md = table.to_markdown()
+                            if md and len(md.strip()) > 20:  # skip tiny/empty tables
+                                tables_markdown.append({
+                                    "page": page_num + 1,
+                                    "table_index": i,
+                                    "markdown": md
+                                })
+                        except Exception:
+                            pass  # skip malformed tables
+            except Exception:
+                pass  # find_tables may fail on some pages
+
         doc.close()
+        if tables_markdown:
+            print(f"[PDF] Extracted {len(tables_markdown)} table(s)")
     except Exception as e:
         print(f"Error parsing PDF {pdf_path}: {e}")
         return {}
@@ -159,7 +183,8 @@ def parse_paper(pdf_path: str):
         "abstract": extract_section("abstract", ["introduction", "1. introduction"]),
         "methodology": extract_section("method", ["result", "conclusion"]),
         "results": extract_section("result", ["conclusion", "references"]),
-        "full_text": full_text[:20000]  # safety limit
+        "full_text": full_text,  # full paper — analyser handles its own budget
+        "tables": tables_markdown  # NEW: extracted tables as markdown
     }
 
 def embed_text(text: str):

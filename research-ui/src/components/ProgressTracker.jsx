@@ -12,7 +12,7 @@ export default function ProgressTracker({ progress }) {
       case "skipped":
         return "⏭️";
       case "error":
-        return "❌";
+        return "";
       default:
         return "○";
     }
@@ -21,7 +21,7 @@ export default function ProgressTracker({ progress }) {
   return (
     <div className="progress-container">
       <h3 className="progress-title">
-        📊 Live Progress
+        Live Progress
       </h3>
       <ul className="progress-list">
         {progress.map((p) => (
@@ -31,6 +31,10 @@ export default function ProgressTracker({ progress }) {
             </div>
             <span className="progress-step">{p.step.charAt(0).toUpperCase() + p.step.slice(1)}</span>
             <span className={`progress-state ${p.state}`}>{p.state}</span>
+            {/* Progress bar area (shows animated fill while pending/running) */}
+            <div className={`progress-bar ${p.state}`}>
+              <div className={`progress-fill ${p.state}`} />
+            </div>
           </li>
         ))}
       </ul>

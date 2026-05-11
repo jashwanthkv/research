@@ -21,7 +21,7 @@ def init_chroma():
         name=COLLECTION_NAME,
         metadata={"hnsw:space": "cosine"}
     )
-    print(f"✅ Collection initialized: {collection}")  # Debug
+    print(f"[OK] Collection initialized: {collection}")  # Debug
 
 client = chromadb.Client(
     Settings(
@@ -53,7 +53,7 @@ def reset_chroma():
 
 # ------------------ ADD PAPER ------------------
 
-def add_paper_chunks(paper_id: str, full_text: str, chunk_size=300, overlap=50):
+def add_paper_chunks(paper_id: str, full_text: str, chunk_size=500, overlap=100):
     """
     Chunk full paper text, embed, and store in Chroma.
     """
